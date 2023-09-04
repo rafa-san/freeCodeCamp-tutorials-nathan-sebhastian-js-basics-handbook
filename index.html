@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Learn JavaScript for Beginners – JS Basics Handbook</h1>
+
+  <h2>1 - JavaScript Introduction</h2>
+
+  <h3>Why learn JavaScript?</h3>
+  <p>There are 4 good reasons why you need to learn and deeply understand JavaScript:</p>
+  <ul>
+    <li>JavaScript is the only language that works in the browser</li>
+    <li>It's fairly easy to learn (but hard to master)</li>
+    <li>It's an essential language for making web applications</li>
+    <li>There are many career opportunities for JavaScript devs</li>
+  </ul>
+
+  <h3>4 - Time to Say Hello World!</h3>
+  <p>For now, just remember that the console.log() keyword is used to print things to the console.</p>
+
+  <h3>7 - JavaScript Basic Data Types</h3>
+  <p>Data Types are simply definitions for different types of data known to a programming language.</p>
+  <p>In this section, you're going to learn basic data types that JavaScript knows:</p>
+  <ul>
+    <li>Strings</li>
+    <li>Numbers</li>
+    <li>Booleans</li>
+    <li>Null</li>
+    <li>Undefined</li>
+  </ul>
+
+  <script>
+    // // let x = 1;
+    // // let y = 4;
+    // // console.log(x + y);
+
+    // let x = `1`;
+    // let y = 4;
+    // x = Number(x);
+    // console.log(x + y);
+    // console.log("");
+
+    // let price = "50";
+    // let tax = 5;
+    // let totalPrice = Number(price) + tax;
+    // console.log(totalPrice);
+    // console.log('');
+
+    // console.log(2 > 1 || 1 > 5);
+    // console.log(false || false);
+    // console.log(false || false);
+    // console.log(typeof false);
+
+    // console.log(19 % 3);
+    // console.log(10 == 3);
+    // console.log(10 !== "10");
+    // console.log(2 < "10");
+    // console.log("5" > 2);
+    // console.log((false && true) || false);
+
+    // const coisas = ['casa', 'muro', 'jardim'];
+    // console.log(coisas);
+    // console.log(coisas[2]);
+    // coisas[1] = 'cimento';
+    // console.log(coisas);
+
+    // const nomes = [];
+    // nomes.push('Rafael', 'Aline', 'Daniel');
+    // console.log(nomes);
+    // // console.log(nomes.pop());
+    // // console.log(nomes);
+
+    // nomes.unshift('Diego');
+    // console.log(nomes);
+    // // nomes.shift();
+    // // console.log(nomes);
+
+    // console.log(nomes.indexOf('Aline'));
+    // console.log(nomes.length);
+
+
+
+    // // Exercise #4
+    // const colors = ['red', 'green', 'blue'];
+    // console.log(colors);
+
+    // colors.push('black');
+    // console.log(colors);
+    
+    // colors.shift();
+    // colors[0] = 'blue';
+    // colors[1] = 'green';
+    // console.log(colors);
+
+    // colors.unshift('yellow');
+    // console.log(colors);
+
+
+
+
+    // const poupanca = 4000;
+    // if (poupanca > 5000) {
+    //   console.log('Uh-Hu! Você tem dinheiro para fazer a viagem!');
+    // } else if (poupanca > 3000) {
+    //   console.log('Junte só mais um pouquinho de dinheiro!')
+    // } else {
+    //   console.log('Você não acumulou dinheiro suficiente :(');
+    // }
+    // console.log('Fim.');
+
+
+
+
+
+    // const age = 60;
+    // switch (age) {
+    //   case 10:
+    //     console.log('Age is 10');
+    //     break;
+    //   case 20:
+    //     console.log('Age is 20');
+    //     break;
+    //   default:
+    //     console.log('Age is neither 10 or 20');
+    // }
+
+
+
+
+
+
+    // switch (0) {
+    //   case 1:
+    //     console.log("Value is one");
+    //   case 0:
+    //     console.log("Value is zero");
+    //   default:
+    //     console.log("No matching case");
+    // }
+
+
+
+
+
+
+    // switch ('volei') {
+    //   case 'futebol':
+    //     console.log('esporte futebol');
+    //     break;
+    //   case 'tenis':
+    //     console.log('esporte tênis');
+    //     break;
+    //   default:
+    //     console.log('esporte outros');
+    // }
+
+
+
+
+
+    // // Exercise #5
+    // // A primary school is giving different rewards based on the student's grade:
+    // const grade = 'A';
+
+    // switch (grade) {
+    //   case 'A':
+    //     console.log(`You got an A, so here's a Chocolate for you!`);
+    //     break;
+    //   case 'B':
+    //     console.log(`You got a B, here's a Cookie for you!`);
+    //     break;
+    //   case 'C':
+    //     console.log(`You got a C, there's room for improvement and here's your Candy!`);
+    //     break;
+    //   default:
+    //     console.log(`No reward to give`);
+    // }
+    // console.log('This is the end!');
+
+
+
+
+
+    // 12 - Control Flows (Loops) in JavaScript
+    // The for statement
+
+    // for (let x = 1; x <= 10; x++) {
+    //   console.log(x);
+    // }
+
+
+
+    // // for statement with shorthand arithmetic expression
+    // for (let x = 1; x < 20; x += 3) {
+    //   console.log(x);
+    // }
+
+
+
+    // let x = 1;
+    // for (x; x < 5; x++) {
+    //   console.log(x);
+    //   console.log('*');
+    // }
+    // console.log('Fim');
+
+
+
+    // let heads = 0;
+    // let tails = 0;
+    // for (x = 1; x <= 10; x++) {
+    //   if (Math.random() < 0.5) {
+    //     tails++;
+    //   } else {
+    //     heads++;
+    //   }
+    // }
+    // console.log("Tossed the coin ten times");
+    // console.log(`Number of heads: ${heads}`);
+    // console.log(`Number of tails: ${tails}`);
+
+
+    // // The while statement
+    // let i = 0;
+    // while (i < 6) {
+    //   console.log(`The value of i = ${i}`);
+    //   i++;
+    // }
+
+
+
+    // let flips = 0;
+    // let isHeads = false;
+    // while (!isHeads) {
+    //   // while (isHeads == false) { minha versão | não parece boa :(
+    //   flips++;
+    //   isHeads = Math.random() < 0.5;
+    // }
+    // console.log(`It took ${flips} flips to land on heads.`);
+    
+
+    // // Exercise #6
+    // // Write a program that prints a half pyramid using asterisks *
+    // let asterisco;
+
+    // for (let i = 1; i <= 5; i++) {
+    //   asterisco = '';
+    //   for (let j = 1; j <= i; j++) {
+    //     asterisco += '*';
+    //   }
+    //   console.log(asterisco);
+    // }
+
+    // for (let i = 4; i >= 0; i--) {
+    //   asterisco = '';
+    //   for (let j = 0; j <= i; j++) {
+    //     asterisco += '*';
+    //   }
+    //   console.log(asterisco);
+    // }
+    
+
+
+
+
+    // Functions
+    // How to create your own function
+
+    // function greet() {
+    //   console.log('Hello');
+    // }
+    // greet();
+
+
+
+    // // Function parameters and arguments
+    // function greet1(name) {
+    //   console.log(`Hello, ${name}!`);
+    //   console.log(`Nice weather today, right?`);
+    // }
+    // greet1('Rafael');
+
+    // function greet2(name, weather) {
+    //   console.log(`Hello, ${name}!`);
+    //   console.log(`It's ${weather} today, right?`);
+    // }
+    // greet2('Rafael', 'rainy');
+
+
+
+
+    // // Default parameters
+    // function greet(name = 'Visitante') {
+    //   console.log(`Hello, ${name}!`);
+    //   console.log("Nice weather today, right?");
+    // }
+    // greet();
+    // // greet('Rafa');
+
+    // function greet(name = 'Rafa', weather) {
+    //   console.log(`Hello, ${name}!`);
+    //   console.log(`It's ${weather} today, right?`);
+    // }
+    // //greet();
+    // greet(undefined, 'sunny');
+
+
+
+
+    // // Default parameters and null
+    // function greet(name = 'John') {
+    //   console.log(name);
+    // }
+    // greet(null);
+
+
+
+
+    // // The return statement
+    // function sum(a, b) {
+    //   return a + b;
+    // }
+    // let result = sum(3, 2);
+    // console.log(result);
+
+
+    // function checkAge (age) {
+    //   if (age > 18) {
+    //     return 'You may get a car license';
+    //   }
+    //   return 'You may not get a car license yet';
+    // }
+    // console.log(checkAge(20));
+    // console.log(checkAge(15));
+
+
+
+    // function greet() {
+    //   console.log('Hello!');
+    //   return;
+    //   console.log('Good bye!');
+    // }
+    // greet();
+
+
+
+
+    // Variable scope
+    // function greet() {
+    //   let myString = 'Hello World!';
+    //   //console.log('Hello, World!');
+    // }
+    // greet();
+    // console.log(myString);
+
+    // let myString = 'Hello, World!';
+    // function greet() {
+    //   console.log(myString);
+    // }
+    // greet();
+
+
+    // let myString = 'Hello, World!';
+
+    // function greet() {
+    //   let myString = 'Morning!';
+    //   console.log(myString);
+    // }
+    
+    // greet();
+    // console.log('myString');
+
+
+
+    // // The rest parameter
+    // function printArguments(...args) {
+    //   console.log(args);
+    // }
+
+    // printArguments('a', 'b', 'c');
+
+
+
+    // Arrow function
+    // const greetings = (name) => {
+    //   console.log(`Hello ${name}!`);
+    // }
+    // greetings('John');
+
+
+    // // o código acima é igual a esse aqui
+    // const greetings = function(name) {
+    //   console.log(`Hello ${name}!`);
+    // }
+    // greetings('Rafa');
+
+
+
+
+    // // Single and multiline arrow functions
+    // function plusTwo(num) {
+    //   return num + 2;
+    // }
+    // console.log(plusTwo(3));
+
+
+    // const plusTwo = (num) => num + 2;
+    // console.log(plusTwo(3));
+
+
+
+
+    // const greetings = () => console.log(`Hello World!`);
+
+    // console.log(greetings());
+
+
+
+
+    // // Arrow function without round brackets
+
+    // // o uso da palavra arguments não é obrigatório
+    // const printArgs = (...casa) => console.log(casa);
+
+    // printArgs(1, 2, 3);
+
+
+
+
+    // let myBook = {
+    //   title: "JavaScript Introduction",
+    //   author: "Nathan Sebhastian",
+    //   describe: function () {
+    //     console.log(`Book title: ${this.title}`);
+    //     console.log(`Book author: ${this.author}`);
+    //   },
+    // };
+    // console.log(myBook.describe());
+
+
+
+
+
+    // let myBook = {
+    //   title: "JavaScript Introduction",
+    //   author: "Nathan Sebhastian",
+    // };
+
+    // // add release year property
+    // myBook.year = 2023;
+
+    // // add publisher property
+    // myBook["publisher"] = "CodeWithNathan";
+
+    // console.log(myBook);
+
+
+  </script>
+</body>
+
+</html>
