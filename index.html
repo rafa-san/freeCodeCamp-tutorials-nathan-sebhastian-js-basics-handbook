@@ -21,10 +21,10 @@
     <li>There are many career opportunities for JavaScript devs</li>
   </ul>
 
-  <h3>4 - Time to Say Hello World!</h3>
+  <h2>4 - Time to Say Hello World!</h2>
   <p>For now, just remember that the console.log() keyword is used to print things to the console.</p>
 
-  <h3>7 - JavaScript Basic Data Types</h3>
+  <h2>7 - JavaScript Basic Data Types</h2>
   <p>Data Types are simply definitions for different types of data known to a programming language.</p>
   <p>In this section, you're going to learn basic data types that JavaScript knows:</p>
   <ul>
@@ -35,11 +35,41 @@
     <li>Undefined</li>
   </ul>
 
-  <script>
-    // // let x = 1;
-    // // let y = 4;
-    // // console.log(x + y);
+  <h3>Undefined in JavaScript</h3>
+  <p>Undefined is a data type in JavaScript used to represent a variable that hasn't been assigned any value yet.</p>
+  <p>Anytime you declared a variable without assigning any value, the undefined value will be assigned to that variable.</p>
 
+  <h3>Null in JavaScript</h3>
+  <p>The null value is a special data type that represents an empty or unknown value. Here's how you assign a variable as null:</p>
+  <code>let first_name = null;</code>
+  <p>The code above means that the value of first_name is empty or unknown.</p>
+  <p>Both undefined and null are values that represent nothing, and other programming languages usually only have one, and that is null.</p>
+  <p>In JavaScript, the undefined value is reserved as the default value when a variable is declared, while null means you intentionally assign an "empty" value for the variable.</p>
+  <p>For now, just keep in mind that JavaScript treats undefined as the "default" empty value and null as the "intentional" empty value.</p>
+
+  <h2>8 - Type conversion and coercion</h2>
+  <p>Changing the data from one type to another is also known as type conversion or type casting. There are 3 functions frequently used to do type conversion:</p>
+  <ul>
+    <li>Number()</li>
+    <li>String()</li>
+    <li>Boolean()</li>
+  </ul>
+  <p>As their name implies, these type conversion functions will attempt to convert any value you specified inside the parentheses to the type of the same name.</p>
+
+  <h3>Type coercion</h3>
+  <p>In JavaScript, type coercion is a process where a value of one type is implicitly converted into another type.</p>
+  <p>This is automatically done by JavaScript so that your code won't cause an error. But as you'll see in this section, type coercion can actually cause undesired behavior in the program.</p>
+
+  <h2>9 - Operators in JavaScript</h2>
+
+  <h3>The comparison operators</h3>
+  <p>JavaScript also has two versions of each comparison operator: loose and strict.</p>
+  <p>In strict mode, JavaScript will compare the types without performing a type coercion.</p>
+  <code>console.log("9" == 9); // true</code> <br>
+  <code>console.log("9" === 9); // false</code>
+
+  <script>
+    // 8 - Type conversion and coercion
     // let x = `1`;
     // let y = 4;
     // x = Number(x);
@@ -52,17 +82,33 @@
     // console.log(totalPrice);
     // console.log('');
 
+
+
+
+    // 9 - Operators in JavaScript
+
     // console.log(2 > 1 || 1 > 5);
     // console.log(false || false);
     // console.log(false || false);
     // console.log(typeof false);
 
+
+    // Exercise #3
     // console.log(19 % 3);
     // console.log(10 == 3);
     // console.log(10 !== "10");
     // console.log(2 < "10");
     // console.log("5" > 2);
     // console.log((false && true) || false);
+
+
+
+
+
+
+
+
+    // 10 - JavaScript Arrays
 
     // const coisas = ['casa', 'muro', 'jardim'];
     // console.log(coisas);
