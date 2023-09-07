@@ -68,6 +68,28 @@
   <code>console.log("9" == 9); // true</code> <br>
   <code>console.log("9" === 9); // false</code>
 
+  <h2>11 - Control Flows (Conditionals) in JavaScript</h2>
+  <p>Control flow is a feature in a programming language that allows you to selectively run specific code based on the different conditions that may arise.</p>
+  <p>Using control flows allows you to define multiple paths a program can take based on the conditions present in your program.</p>
+  <p>There are two types of control flows commonly used in JavaScript: conditionals and loops.</p>
+
+  <h3>The switch statement body</h3>
+  <p>You need to remember the differences between the if and case evaluations:</p>
+
+  <ul>
+    <li>if block will be executed when the test condition evaluates to true</li>
+    <li>case block will be executed when the test condition exactly matches the given switch argument</li>
+  </ul>
+
+  <h2>12 - Control Flows (Loops) in JavaScript</h2>
+  <p>A Loop statement is another category of control flow statement used to execute a block of code multiple times until a certain condition is met.</p>
+
+  <h3>When to use a for loop</h3>
+  <p>The for loop is useful when you know how many times you need to execute a repetitive task.</p>
+
+  <h3>When to use a while loop</h3>
+  <p>An easy way to know when you should use while is when you don't know how many times you need to execute the code.</p>
+
   <script>
     // 8 - Type conversion and coercion
     // let x = `1`;
@@ -149,8 +171,9 @@
 
 
 
+    // 11 - Control Flows (Conditionals) in JavaScript
 
-    // const poupanca = 4000;
+    // const poupanca = 3000;
     // if (poupanca > 5000) {
     //   console.log('Uh-Hu! Você tem dinheiro para fazer a viagem!');
     // } else if (poupanca > 3000) {
@@ -164,7 +187,7 @@
 
 
 
-    // const age = 60;
+    // const age = 20;
     // switch (age) {
     //   case 10:
     //     console.log('Age is 10');
@@ -181,15 +204,16 @@
 
 
 
-    // switch (0) {
+    // switch (3) {
     //   case 1:
     //     console.log("Value is one");
+    //     break;
     //   case 0:
     //     console.log("Value is zero");
+    //     break;
     //   default:
     //     console.log("No matching case");
     // }
-
 
 
 
@@ -207,10 +231,82 @@
     // }
 
 
+//     let weekdayNumber = 1;
 
+// if (weekdayNumber === 0) {
+//   console.log("Sunday");
+// } else if (weekdayNumber === 1) {
+//   console.log("Monday");
+// } else if (weekdayNumber === 2) {
+//   console.log("Tuesday");
+// } else if (weekdayNumber === 3) {
+//   console.log("Wednesday");
+// } else if (weekdayNumber === 4) {
+//   console.log("Thursday");
+// } else if (weekdayNumber === 5) {
+//   console.log("Friday");
+// } else if (weekdayNumber === 6) {
+//   console.log("Saturday");
+// } else {
+//   console.log("The weekday number is invalid");
+// }
+
+// let weekdayNumber = 1;
+
+// switch (weekdayNumber) {
+//   case 0:
+//     console.log("Sunday");
+//     break;
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   default:
+//     console.log("The weekday number is invalid");
+// }
+
+
+// let myFood = "Chocolate Cake";
+
+// if (myFood === "Banana" || myFood === "Apple") {
+//   console.log("Eat fruits everyday to keep you healthy.");
+// }
+
+// if (myFood === "Chocolate Cake") {
+//   console.log("Enjoy the sweet treat.");
+// }
+
+
+// let myFood = "Banana";
+
+// switch (myFood) {
+//   case "Banana":
+//   case "Apple":
+//     console.log("Eat fruits everyday to keep you healthy.");
+//     break;
+//   case "Chocolate Cake":
+//     console.log("Enjoy the sweet treat.");
+//     break;
+// }
 
 
     // // Exercise #5
+    // fazer das duas formas ensinadas
+
     // // A primary school is giving different rewards based on the student's grade:
     // const grade = 'A';
 
@@ -270,6 +366,8 @@
     // console.log("Tossed the coin ten times");
     // console.log(`Number of heads: ${heads}`);
     // console.log(`Number of tails: ${tails}`);
+
+
 
 
     // // The while statement
