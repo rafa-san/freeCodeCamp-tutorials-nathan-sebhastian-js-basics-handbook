@@ -1,3 +1,5 @@
+console.log(``);
+
 // 8 - Type conversion and coercion
     // let x = `1`;
     // let y = 4;
@@ -486,9 +488,14 @@
 
 
     // const greetings = () => console.log(`Hello World!`);
-
     // console.log(greetings());
 
+
+    // const greetings = () => {
+    //     console.log(`Hello, World!`);
+    //     console.log(`How are you?`);
+    // }
+    // greetings();
 
 
 
@@ -501,17 +508,45 @@
 
 
 
+    // How to convert a normal function to an arrow function easily
+    // function plusTwo(num) {
+    //     return num + 2;
+    //   }
+      
+    //   // step 1: replace function with let / const
+    //   const plusTwo(num) {
+    //     return num + 2;
+    //   }
+      
+    //   // step 2: add = after the function name
+    //   const plusTwo = (num) {
+    //     return num + 2;
+    //   }
+      
+    //   // step 3: add => after the round brackets
+    //   const plusTwo = (num) => {
+    //     return num + 2;
+    //   }
+
+
+
+
+
 
     // let myBook = {
     //   title: "JavaScript Introduction",
     //   author: "Nathan Sebhastian",
-    //   describe: function () {
-    //     console.log(`Book title: ${this.title}`);
-    //     console.log(`Book author: ${this.author}`);
-    //   },
+    // //   describe: function () {
+    // //     console.log(`Book title: ${this.title}`);
+    // //     console.log(`Book author: ${this.author}`);
+    // //   },
     // };
-    // console.log(myBook.describe());
-
+    // // myBook.describe();
+    // // console.log(myBook.title);
+    // myBook.year = 2023;
+    // myBook.author = `Rafa Santana`;
+    // delete myBook.year;
+    // console.log(myBook);
 
 
 
@@ -528,3 +563,46 @@
     // myBook["publisher"] = "CodeWithNathan";
 
     // console.log(myBook);
+
+
+
+    // const person = {
+    //     firstName: `Rafa`,
+    //     lastName: `Santana`
+    // }
+
+    // // // check if firstName exists
+    // // console.log(`firstName` in person);
+
+    // // if (`firstName` in person === true) {
+    // //     console.log(`Tem sim!!`);
+    // // }
+
+    // // check if age exists
+    // console.log(`lastName` in person);
+
+
+    // Exercise #8
+    const person = {
+        name: `Rafa`,
+        age: 41,
+        greet: function() {
+            console.log(`Hello! My name is ${this.name} and I'm ${this.age} years old.`)
+        }
+    }
+    person.greet();
+
+
+
+
+    // Final Exercise: Build a Cash Register Machine
+    const cashRegister = {
+        itemsForSale: [
+            {name: 'Phone', price: 300},
+        ]
+    }
+
+
+
+
+    console.log(``);
