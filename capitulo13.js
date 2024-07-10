@@ -70,8 +70,6 @@ function sum(a, b) {
 
 let result = sum(3, 2);
 console.log(result);
-*/
-
 
 
 // exemplo
@@ -85,7 +83,112 @@ function checkAge(age) {
 
 console.log(checkAge(20));
 console.log(checkAge(15));
+*/
+
+
+/*
+// The rest parameter
+
+function printArguments(...args) {
+  console.log(args);
+}
+
+printArguments('a', 'b', 'c');
+*/
 
 
 
-// continuar a partir de: The rest parameter
+/*
+// Arrow function
+
+function greetings(name) {
+  console.log(`Hello, ${name}!`);
+}
+greetings('Rafa');
+
+***
+
+const greetings = (name) => {
+  console.log(`Hello, ${name}!`);
+};
+greetings('John');
+
+
+
+// exemplo:
+function plusTwo(num) {
+  return num + 2;
+}
+console.log(plusTwo(3));
+
+// ou
+
+function plusTwo(num) {
+  console.log(num + 2);
+}
+plusTwo(10);
+
+
+// ou
+
+const somar = (num) => {
+  return num + 2;
+}
+console.log(somar(20));
+
+// ou
+const somar = (num) => num + 2;
+console.log(somar(30));
+
+
+// exemplo
+const greeting = () => console.log('Hello world!');
+greeting();
+
+const greetings = () => {
+  console.log('Olá');
+  console.log('Mundo!');
+}
+greetings();
+
+
+// exemplo
+function nomes(para1, para2) {
+  return 'Olá, ' + para1 + ' e ' + para2;
+}
+console.log(nomes('Rafael', 'Aline'));
+
+*/
+
+
+
+/*
+Exercise #7
+Write a function named calculateSquare() that's used to calculate the area and perimeter of a square shape.
+
+The function accepts one parameter: the side of the square.
+
+The formula to calculate the area is side * side, and the formula to calculate the perimeter is 4 * side.
+
+The output shows the size of the size, the area, and the perimeter as follows:
+
+The square side is 8
+The area of the square is 64
+The perimeter of the square is 32
+
+// minha resolução
+function calculateSquare(side) {
+  console.log(`The square side is ${side}`);
+  console.log(`The area of the square is ${side * side}`);
+  console.log(`The perimeter of the square is ${4 * side}`);
+}
+calculateSquare(8);
+*/
+
+const calculateSquare = (side) => {
+  console.log(`The square side is ${side}`);
+  console.log(`The area of the square is ${side * side}`);
+  console.log(`The perimeter of the square is ${4 * side}`);
+}
+
+calculateSquare(8);
