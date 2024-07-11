@@ -15,7 +15,6 @@
       <p>Instead of covering all the theories and concepts of JavaScript, I'll be teaching you only the most important building blocks of the language. We'll cover things like variables, data types, functions, objects, arrays, and classes. You'll also learn how to mix them all to build a small but solid program.</p>
       <p>We're also going to leave out HTML, CSS, and using JavaScript in the browser. This tutorial focuses only on JavaScript as a programming language and uses the terminal to run the code.</p>
       <p>This tutorial also has exercises for each section which gives you time to practice what you learned and "drill" the knowledge into your brain.</p>
-      <p>This handbook is completely free right here in this webpage. If you want the <a href="https://codewithnathan.com/beginning-modern-javascript">Kindle or paperback version of this tutorial</a>, you can pay a small fee for it. It'll help support me in creating an in-depth JavaScript Tutorial that will help you build a complete web application.</p>
     
       <!-- Table of Contents -->
       <h2 id="tableofcontents">Table of Contents</h2>
@@ -36,109 +35,118 @@
         </li>
         <li><a href="#3quickconsoleintroduction">3 - Quick Console Introduction</a></li>
         <li><a href="#4timetosayhelloworld">4 - Time to Say Hello World!</a></li>
-        <li><a href="#5javascriptcodestructure">5 - JavaScript Code Structure</a>
-        <ul>
-        <li><a href="#statements">Statements</a></li>
-        <li><a href="#comments">Comments</a></li>
-        <li><a href="#executionflow">Execution Flow</a></li>
-        <li><a href="#exercise1">Exercise #1</a></li>
-        </ul>
+        <li>
+          <a href="#5javascriptcodestructure">5 - JavaScript Code Structure</a>
+          <ul>
+            <li><a href="#statements">Statements</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#executionflow">Execution Flow</a></li>
+            <li><a href="#exercise1">Exercise #1</a></li>
+          </ul>
         </li>
-        <li><a href="#6javascriptvariables">6 - JavaScript Variables</a>
-        <ul>
-        <li><a href="#variablenaming">Variable naming</a></li>
-        <li><a href="#constantvariable">Constant variable</a></li>
-        <li><a href="#thevarkeyword">The var keyword</a></li>
-        <li><a href="#exercise2">Exercise #2</a></li>
-        <li><a href="#summary">Summary</a></li>
-        </ul>
+        <li>
+          <a href="#6javascriptvariables">6 - JavaScript Variables</a>
+          <ul>
+            <li><a href="#variablenaming">Variable naming</a></li>
+            <li><a href="#constantvariable">Constant variable</a></li>
+            <li><a href="#thevarkeyword">The var keyword</a></li>
+            <li><a href="#exercise2">Exercise #2</a></li>
+            <li><a href="#summary">Summary</a></li>
+          </ul>
         </li>
-        <li><a href="#7javascriptbasicdatatypes">7 - JavaScript Basic Data Types</a>
-        <ul>
-        <li><a href="#stringsinjavascript">Strings in JavaScript</a></li>
-        <li><a href="#numbersintegersandfloatsinjavascript">Numbers (integers and floats) in JavaScript</a></li>
-        <li><a href="#booleansinjavascript">Booleans in JavaScript</a></li>
-        <li><a href="#undefinedinjavascript">Undefined in JavaScript</a></li>
-        <li><a href="#nullinjavascript">Null in JavaScript</a></li>
-        </ul>
+        <li>
+          <a href="#7javascriptbasicdatatypes">7 - JavaScript Basic Data Types</a>
+          <ul>
+            <li><a href="#stringsinjavascript">Strings in JavaScript</a></li>
+            <li><a href="#numbersintegersandfloatsinjavascript">Numbers (integers and floats) in JavaScript</a></li>
+            <li><a href="#booleansinjavascript">Booleans in JavaScript</a></li>
+            <li><a href="#undefinedinjavascript">Undefined in JavaScript</a></li>
+            <li><a href="#nullinjavascript">Null in JavaScript</a></li>
+          </ul>
         </li>
-        <li><a href="#8typeconversionandcoercion">8 - Type conversion and coercion</a>
-        <ul>
-        <li><a href="#typecoercion">Type coercion</a></li>
-        <li><a href="#typecoercionrules">Type coercion rules</a></li>
-        <li><a href="#whyyoushouldavoidtypecoercion">Why you should avoid type coercion</a></li>
-        </ul>
+        <li>
+          <a href="#8typeconversionandcoercion">8 - Type conversion and coercion</a>
+          <ul>
+            <li><a href="#typecoercion">Type coercion</a></li>
+            <li><a href="#typecoercionrules">Type coercion rules</a></li>
+            <li><a href="#whyyoushouldavoidtypecoercion">Why you should avoid type coercion</a></li>
+          </ul>
         </li>
-        <li><a href="#9operatorsinjavascript">9 - Operators in JavaScript</a>
-        <ul>
-        <li><a href="#arithmeticoperators">Arithmetic operators</a></li>
-        <li><a href="#theassignmentoperator">The assignment operator</a></li>
-        <li><a href="#thecomparisonoperators">The comparison operators</a></li>
-        <li><a href="#logicaloperators">Logical operators</a></li>
-        <li><a href="#thetypeofoperator">The typeof operator</a></li>
-        <li><a href="#exercise3">Exercise #3</a></li>
-        </ul>
+        <li>
+          <a href="#9operatorsinjavascript">9 - Operators in JavaScript</a>
+          <ul>
+            <li><a href="#arithmeticoperators">Arithmetic operators</a></li>
+            <li><a href="#theassignmentoperator">The assignment operator</a></li>
+            <li><a href="#thecomparisonoperators">The comparison operators</a></li>
+            <li><a href="#logicaloperators">Logical operators</a></li>
+            <li><a href="#thetypeofoperator">The typeof operator</a></li>
+            <li><a href="#exercise3">Exercise #3</a></li>
+          </ul>
         </li>
-        <li><a href="#10javascriptarrays">10 - JavaScript Arrays</a>
-        <ul>
-        <li><a href="#arrayindexposition">Array index position</a></li>
-        <li><a href="#specialmethodsforarraymanipulation">Special methods for array manipulation</a></li>
-        <li><a href="#exercise4">Exercise #4</a></li>
-        </ul>
+        <li>
+          <a href="#10javascriptarrays">10 - JavaScript Arrays</a>
+          <ul>
+            <li><a href="#arrayindexposition">Array index position</a></li>
+            <li><a href="#specialmethodsforarraymanipulation">Special methods for array manipulation</a></li>
+            <li><a href="#exercise4">Exercise #4</a></li>
+          </ul>
         </li>
-        <li><a href="#11controlflowsconditionalsinjavascript">11 - Control Flows (Conditionals) in JavaScript</a>
-        <ul>
-        <li><a href="#theifelsestatement">The if...else statement</a></li>
-        <li><a href="#theswitchcasestatement">The switch...case statement</a></li>
-        <li><a href="#theswitchstatementbody">The switch statement body</a></li>
-        <li><a href="#switchstatementusecases">Switch statement use cases</a></li>
-        <li><a href="#exercise5">Exercise #5</a></li>
-        </ul>
+        <li>
+          <a href="#11controlflowsconditionalsinjavascript">11 - Control Flows (Conditionals) in JavaScript</a>
+          <ul>
+            <li><a href="#theifelsestatement">The if...else statement</a></li>
+            <li><a href="#theswitchcasestatement">The switch...case statement</a></li>
+            <li><a href="#theswitchstatementbody">The switch statement body</a></li>
+            <li><a href="#switchstatementusecases">Switch statement use cases</a></li>
+            <li><a href="#exercise5">Exercise #5</a></li>
+          </ul>
         </li>
-        <li><a href="#12controlflowsloopsinjavascript">12 - Control Flows (Loops) in JavaScript</a>
-        <ul>
-        <li><a href="#theforstatement">The for statement</a></li>
-        <li><a href="#whentousetheforloop">When to use the for loop?</a></li>
-        <li><a href="#thewhilestatement">The while statement</a></li>
-        <li><a href="#whentousethewhileloop">When to use the while loop?</a></li>
-        <li><a href="#exercise6">Exercise #6</a></li>
-        </ul>
+        <li>
+          <a href="#12controlflowsloopsinjavascript">12 - Control Flows (Loops) in JavaScript</a>
+          <ul>
+            <li><a href="#theforstatement">The for statement</a></li>
+            <li><a href="#whentousetheforloop">When to use the for loop?</a></li>
+            <li><a href="#thewhilestatement">The while statement</a></li>
+            <li><a href="#whentousethewhileloop">When to use the while loop?</a></li>
+            <li><a href="#exercise6">Exercise #6</a></li>
+          </ul>
         </li>
-        <li><a href="#13functionsinjavascript">13 - Functions in JavaScript</a>
-        <ul>
-        <li><a href="#howtocreateyourownfunction">How to create your own function</a></li>
-        <li><a href="#functionparametersandarguments">Function parameters and arguments</a></li>
-        <li><a href="#defaultparameters">Default parameters</a></li>
-        <li><a href="#defaultparametersandnull">Default parameters and null</a></li>
-        <li><a href="#thereturnstatement">The return statement</a></li>
-        <li><a href="#variablescope">Variable scope</a></li>
-        <li><a href="#therestparameter">The rest parameter</a></li>
-        <li><a href="#arrowfunction">Arrow function</a></li>
-        <li><a href="#singleandmultilinearrowfunctions">Single and multiline arrow functions</a></li>
-        <li><a href="#arrowfunctionwithoutroundbrackets">Arrow function without round brackets</a></li>
-        <li><a href="#arrowfunctiondoesnthaveargumentsbinding">Arrow function doesn't have arguments binding</a></li>
-        <li><a href="#howtoconvertanormalfunctiontoanarrowfunctioneasily">How to convert a normal function to an arrow function easily</a></li>
-        <li><a href="#exercise7">Exercise #7</a></li>
-        </ul>
+        <li>
+          <a href="#13functionsinjavascript">13 - Functions in JavaScript</a>
+          <ul>
+            <li><a href="#howtocreateyourownfunction">How to create your own function</a></li>
+            <li><a href="#functionparametersandarguments">Function parameters and arguments</a></li>
+            <li><a href="#defaultparameters">Default parameters</a></li>
+            <li><a href="#defaultparametersandnull">Default parameters and null</a></li>
+            <li><a href="#thereturnstatement">The return statement</a></li>
+            <li><a href="#variablescope">Variable scope</a></li>
+            <li><a href="#therestparameter">The rest parameter</a></li>
+            <li><a href="#arrowfunction">Arrow function</a></li>
+            <li><a href="#singleandmultilinearrowfunctions">Single and multiline arrow functions</a></li>
+            <li><a href="#arrowfunctionwithoutroundbrackets">Arrow function without round brackets</a></li>
+            <li><a href="#arrowfunctiondoesnthaveargumentsbinding">Arrow function doesn't have arguments binding</a></li>
+            <li><a href="#howtoconvertanormalfunctiontoanarrowfunctioneasily">How to convert a normal function to an arrow function easily</a></li>
+            <li><a href="#exercise7">Exercise #7</a></li>
+          </ul>
         </li>
-        <li><a href="#14objectsinjavascript">14 - Objects in JavaScript</a>
-        <ul>
-        <li><a href="#howtoaccessobjectvalues">How to access object values</a></li>
-        <li><a href="#howtoaddanewpropertytotheobject">How to add a new property to the object</a></li>
-        <li><a href="#howtomodifyobjectproperties">How to modify object properties</a></li>
-        <li><a href="#howtodeletegobjectproperties">How to delete object properties</a></li>
-        <li><a href="#howtocheckifapropertyexistsinanobject">How to check if a property exists in an object</a></li>
-        <li><a href="#exercise8">Exercise #8</a></li>
-        </ul>
+        <li>
+          <a href="#14objectsinjavascript">14 - Objects in JavaScript</a>
+          <ul>
+            <li><a href="#howtoaccessobjectvalues">How to access object values</a></li>
+            <li><a href="#howtoaddanewpropertytotheobject">How to add a new property to the object</a></li>
+            <li><a href="#howtomodifyobjectproperties">How to modify object properties</a></li>
+            <li><a href="#howtodeletegobjectproperties">How to delete object properties</a></li>
+            <li><a href="#howtocheckifapropertyexistsinanobject">How to check if a property exists in an object</a></li>
+            <li><a href="#exercise8">Exercise #8</a></li>
+          </ul>
         </li>
         <li><a href="#finalexercisebuildeacashregistermachine">Final Exercise: Build a Cash Register Machine</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
         <li><a href="#solutions">Solutions</a></li>
       </ul>
-    
+
       <!-- Capítulo 01 -->
       <h2 id="1javascriptintroduction">1 - JavaScript Introduction</h2>
-    
       <p>JavaScript was created around April 1995 by Brendan Eich. At the time, he was working to develop a browser for a company called Netscape. He was told that he only had 10 days to design and code a working prototype of a programming language that could run on the browser.</p>
       <p>He needed to create a language that appealed to non-professional programmers like Microsoft Visual Basic.</p>
       <p>The reason he was given only 10 days was that Netscape needed to release its browser, which at the time was in competition with  Microsoft.</p>
@@ -170,67 +178,67 @@
       <p>In the beginning, JavaScript was actually named LiveScript. It was renamed to JavaScript because Java was a very popular programming language.</p>
       <p>Since most software developers were already familiar with Java, the name JavaScript was thought to help in marketing JavaScript as a great programming language and draw the interest of developers at the time.</p>
       <p>Just to be clear, JavaScript and Java are two completely different programming languages. You don't need to know Java to learn JavaScript (or the other way around). :)</p>
+
+      <hr>
       
-      <!--kg-card-end: markdown--><!--kg-card-begin: markdown-->
+      <!-- Capítulo 02 -->
       <h2 id="2howtosetupyourcomputer">2 - How to Set Up Your Computer</h2>
       <p>To write a program using JavaScript, you need to install 2 free tools that are available for all operating systems.</p>
       <p>The first tool to install is Visual Studio Code.</p>
+      
       <h3 id="howtoinstallvscode">How to Install VSCode</h3>
       <p>Visual Studio Code or VSCode for short is a text editor program created for the purpose of writing code. Aside from being free, VSCode is open source and available on all major operating systems.</p>
       <p>You can use VSCode on Windows, macOS, and Linux, so if you don't have a text editor on your computer, I recommend that you install VSCode here.</p>
       <p>Now that you have a text editor to write JavaScript code, you need a software to run JavaScript code. Let's install Node.js next.</p>
+
       <h3 id="howtoinstallnodejs">How to Install Node.js</h3>
       <p>To run JavaScript outside of the browser, you need to install Node.js, which is essentially a JavaScript runner.</p>
       <p>Simply go to the Node.js website at nodejs.org and download the latest LTS version for your computer. Once the download is complete, install it on your system.</p>
       <p>You need to run Node.js using the console, so open your command line or terminal application and run the following command:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> <span class="token parameter variable">-v</span>
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> <span class="token parameter variable">-v</span></code></pre>
       <p>This command will output the version of your freshly installed Node.js into the console.</p>
-      <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="3quickconsoleintroduction">3 - Quick Console Introduction</h2>
+
+
+      <!-- Capítulo 03 -->
+      <h2 id="3quickconsoleintroduction">3 - Quick Console Introduction</h2>
       <p>The console is a text-based interface that you can use to type and run commands on your computer. On Windows, it's called the Command Line. On macOS and Linux it's known as the Terminal.</p>
       <p>You're not going to use all the commands available within the console. In fact, you only need to know 7 basic commands to help you run JavaScript code.</p>
       <p>First, open the console program on your computer and type the <code>pwd</code> command:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">pwd</span>
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">pwd</span></code></pre>
       <p>This is the command you use to find out which directory your terminal is currently on. <code>pwd</code> is short for print working directory.</p>
       <p>To change the working directory, you need to run the <code>cd</code> command.</p>
       <p>Here's an example to move into a child directory:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">cd</span> directory_name/directory_name
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">cd</span> directory_name/directory_name</code></pre>
       <p>To move up to a parent directory, you specify <code>..</code> next to the command:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span></code></pre>
       <p>To go up more than one directory, use <code>../..</code></p>
       <p>To clear your console from previous commands and output, use the <code>clear</code> command:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">clear</span>
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">clear</span></code></pre>
       <p>To print out the list of files and directories in the current directory, run the <code>ls</code> command:</p>
       <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">ls</span>
       </code></pre>
       <p>To create a new file, use the <code>touch</code> command followed by the file name and extension:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">touch</span> index.js
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">touch</span> index.js</code></pre>
       <p>The command above will create a new JavaScript file named <code>index.js</code> on the current working directory.</p>
       <p>To create a new directory, use the <code>mkdir</code> command followed by the directory name:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">mkdir</span> my_project
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">mkdir</span> my_project</code></pre>
       <p>To run JavaScript using Node.js, specify <code>node</code> followed by the file name as follows:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> index.js
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> index.js</code></pre>
       <p>You'll see any output from the code in the same console.</p>
       <p>There are lots of things you can do with the console, but these 7 commands would be enough because we only need it to run JavaScript code.</p>
       <p>Next, let's run your first JavaScript program!</p>
-      <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="4timetosayhelloworld">4 - Time to Say Hello World!</h2>
+
+      <hr>
+
+      <!-- Capítulo 04 -->
+      <h2 id="4timetosayhelloworld">4 - Time to Say Hello World!</h2>
       <p>It's time to run your first JavaScript program using Node.</p>
       <p>From the console, create a new JavaScript file named <code>index.js</code> using the <code>touch</code> command.</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">touch</span> index.js
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">touch</span> index.js</code></pre>
       <p>Next, open the file using VSCode and write the following line of code into the file:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
       <p>Back on the console, run this script with Node:</p>
-      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> index.js
-      </code></pre>
+      <pre class="language-sh" tabindex="0"><code class="language-sh"><span class="token function">node</span> index.js</code></pre>
       <p>The console should execute the <code>index.js</code> file and print "Hello World!".</p>
       <p>You've just run your very first JavaScript program using Node.js. Excellent!</p>
       <p>When you run the <code>node index.js</code> command, the Node.js program starts reading the script line by line from top to bottom.</p>
@@ -241,287 +249,261 @@
       <p>On the other hand, the <code>console</code> keyword is an object, which is a standalone property that gives access to certain functionalities.</p>
       <p>We'll learn more about functions and objects later. For now, just remember that the <code>console.log()</code> keyword is used to print things to the console.</p>
       <p>Next, let's start with learning JavaScript code structure.</p>
-    <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="5javascriptcodestructure">5 - JavaScript Code Structure</h2>
-    <p>A computer program is a series of pieces of code written in a text file. These text files are then run through a software that's designed specially for running the code. The Node.js software you downloaded previously is the tool that processes JavaScript code.</p>
-    <p>Before we go further, let's understand the structure of code.</p>
-    <h3 id="statements">Statements</h3>
-    <p>A statement is a single instruction for the computer to run. Think of it like a sentence, but for computers. We can end a statement by using a semicolon <code>;</code> just like we can end a sentence using a dot <code>.</code></p>
-    <p>You can write multiple statements in a single line, but the convention is to write one statement per line:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// This is hard to read</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Now it's better</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p>Each statement is an expression of some action that needs to be carried out by the software that executes the code.</p>
-    <h3 id="comments">Comments</h3>
-    <p>In programming, comments are text we use to communicate the context of the code written in the file.</p>
-    <p>To write a comment in JavaScript, you need to add two forward slashes <code>//</code> before the comment as shown below:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// This is a comment</span>
-    <span class="token comment">// This is also a comment</span>
-    
-    <span class="token comment">// Below print two lines of statements</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p>Comments are ignored by the language processor, so you can use comments to disable some code without having to delete that code.</p>
-    <p>The code below shows how to disable the second print statement:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// console.log("I'm learning JavaScript");</span>
-    </code></pre>
-    <h3 id="executionflow">Execution Flow</h3>
-    <p>A language processor such as Node.js executes statements in a top-down approach. The statement written in the first line will be executed before the second line, then continue down to the last line:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Printing numbers</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p><strong>Output:</strong></p>
-    <pre class="language-txt" tabindex="0"><code class="language-txt">Hello World!
-    I'm learning JavaScript
-    1
-    2
-    3
-    </code></pre>
-    <p>If you want to print the numbers before the text, then you need to move the corresponding <code>console.log()</code> lines to the top.</p>
-    <h3 id="exercise1">Exercise #1</h3>
-    <p>Try to print your name, age, and occupation on the console.</p>
-    <p>The output would look as follows:</p>
-    <pre class="language-txt" tabindex="0"><code class="language-txt">John Doe
-    19
-    Student
-    </code></pre>
-    <p>Now that you understand the basic code structure of JavaScript, let's continue with learning variables next.</p>
-    <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="6javascriptvariables">6 - JavaScript Variables</h2>
-    <p>Before explaining what a variable is, I want you to change the code you've written in the <code>index.js</code> file.</p>
-    <p>Change the code in that file as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello World!"</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
-    </code></pre>
-    <p>Next, run the code using the <code>node index.js</code> command. You'll see the same output as when you write the 'Hello World!' message directly inside the <code>console.log()</code> function. How can this be?</p>
-    <p>This is because the message written in the code above is a <em>variable</em>.</p>
-    <p>In programming, a variable is simply a name that you give to a value so that you can access that value later. You can think of a variable as a label that can be tagged to a certain value, so you can refer to the value using the label.</p>
-    <p>To declare a variable, you need to type the keyword <code>let</code> followed by the variable name.</p>
-    <p>The first line in the code tells JavaScript to associate the <code>message</code> variable with the value <code>Hello World!</code>:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello World!"</span>
-    </code></pre>
-    <p>In the second line, JavaScript is instructed to print the value of <code>message</code>, and that's exactly what it does.</p>
-    <p>You can change the value of your variable by re-assigning another value as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js">message <span class="token operator">=</span> <span class="token string">"Hello World!"</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
-    message <span class="token operator">=</span> <span class="token string">"Nice weather!"</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span>
-    </code></pre>
-    <p>Run the file and you'll see two lines printed as the output:</p>
-    <pre class="language-txt" tabindex="0"><code class="language-txt">Hello World!
-    Nice weather!
-    </code></pre>
-    <p>Variables are used to reference data so that you can use the same data multiple times in your program.</p>
-    <p>Next, let's see some rules for naming variables in JavaScript.</p>
-    <h3 id="variablenaming">Variable naming</h3>
-    <p>JavaScript has a few naming rules that you need to know to avoid naming errors.</p>
-    <p>Variable names can only contain alphabet letters, numbers, and underscores (<code>_</code>). This means you can name your variable <code>message</code>, <code>message_1</code>, <code>message_2</code>.</p>
-    <p>The first character of the variable name must not be a number. <code>message_1</code> is okay. <code>1_message</code> is not.</p>
-    <p>You can't use reserved keywords such as <code>console</code> because they are used by JavaScript to do certain things. There are many other keywords used by JavaScript that you'll learn in the following sections such as <code>if</code>, <code>for</code>, and <code>while</code>.</p>
-    <p>Variable names are case-sensitive, which means <code>Message</code>, <code>MESSAGE</code>, and <code>message</code> can be used to create three different variables. But of course, I don't recommend using similar names as it causes confusion.</p>
-    <p>Sometimes, you need more than one word to declare a variable name. JavaScript has two naming conventions that are used worldwide:</p>
-    <ol>
-    <li><code>camelCase</code></li>
-    <li><code>snake_case</code></li>
-    </ol>
-    <p>Camel case is a naming convention that uses an uppercase letter for the first character for subsequent words. Here's an example:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myAwesomeVariable
-    </code></pre>
-    <p>The snake case naming convention uses an underscore to separate words. Here's an example:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> my_awesome_variable
-    </code></pre>
-    <p>Both are acceptable naming conventions, but you should stick to one of them in your code to avoid confusion.</p>
-    <h3 id="constantvariable">Constant variable</h3>
-    <p>There are times when you need to store a value that never changes in a variable.</p>
-    <p>A constant variable is a variable that doesn't change its value as long as the program is running. In other programming languages, changing the value of a constant will produce an error.</p>
-    <p>In JavaScript, a constant variable is declared using the <code>const</code> keyword.</p>
-    <p>The following shows how to declare 2 constants in JavaScript:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">FILE_SIZE_LIMIT</span> <span class="token operator">=</span> <span class="token number">2000</span>
-    <span class="token keyword">const</span> <span class="token constant">MAX_SPEED</span> <span class="token operator">=</span> <span class="token number">300</span>
-    </code></pre>
-    <p>The naming convention for a constant is to use all uppercase letters, although using lowercase letters also works. The uppercase is just a standard to make constants stand out more.</p>
-    <h3 id="thevarkeyword">The var keyword</h3>
-    <p>The <code>var</code> keyword is used to declare variables with a global scope. This keyword was the only keyword you can use to declare variables before JavaScript released the new <code>let</code> and <code>const</code> keyword in 2015.</p>
-    <p>As of today, you should avoid using <code>var</code> if you can, since <code>var</code> can introduce bugs that you can avoid by using the <code>let</code> keyword.</p>
-    <p>To show you what I mean, consider the following example:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
-    </code></pre>
-    <p>The code above will print the <code>name</code> variable just fine, but it really should not because the variable <code>name</code> is declared inside the <code>if</code> block.</p>
-    <p>This is because any variable declared using the <code>var</code> keyword is accessible from everywhere. The scope of that variable is global.</p>
-    <p>On the other hand, the <code>let</code> keyword has a block scope, which means the variable is only accessible from the block and all its child blocks.</p>
-    <p>But why bother with scoping the variable? This is because when you have hundreds or thousands of code lines, it can become frustrating to trace an error that occurs because of global variables.</p>
-    <p>There's a principle in software development called "principles of least exposure", which means you don't expose any part of your program that's unnecessary.</p>
-    <p>Block scoping a variable ensures that a variable is exposed and accessible only in parts of your codebase that require the variable.</p>
-    <p>A variable declared using the <code>let</code> keyword is identical to a variable declared using <code>var</code> except for the scope level.</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>  <span class="token comment">// Error: name is not defined</span>
-    </code></pre>
-    <p>This also means that you now have <code>var</code>, <code>let</code>, and <code>const</code> keywords to declare a variable. Which one to use?</p>
-    <p>In general, you can declare a variable with <code>const</code> first. When you code your application and realize that you need to change the variable assignment, you can change the declaration to <code>let</code>.</p>
-    <p>If you know from the start that the variable's value will change, then you can use <code>let</code> immediately. Just don't use <code>var</code> today or people might get mad at you.</p>
-    <h3 id="exercise2">Exercise #2</h3>
-    <p>Write a program with three variables, each with the following value:</p>
-    <ol>
-    <li>The first variable contains your name</li>
-    <li>The second variable contains your age</li>
-    <li>The third variable contains your occupation</li>
-    </ol>
-    <p>Then print the variables using the <code>console.log()</code> method. Here's the example output:</p>
-    <pre class="language-txt" tabindex="0"><code class="language-txt">John Doe
-    Student
-    19
-    </code></pre>
-    <h3 id="summary">Summary</h3>
-    <p>How you use variables to make a program that does what you want it to do is one of the most important skills you can have as a programmer.</p>
-    <p>But before you learn more about how to make use of variables, let's learn about data types in JavaScript.</p>
-    <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="7javascriptbasicdatatypes">7 - JavaScript Basic Data Types</h2>
-    <p>Data Types are simply definitions for different types of data known to a programming language.</p>
-    <p>A data type contains specifications about what you can and can't do with that data.</p>
-    <p>To show you a brain-friendly example, I'm sure you agree that <code>2 + 2 = 4</code>?</p>
-    <p>Well, JavaScript also agrees with that:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: 4</span>
-    </code></pre>
-    <p>But what if you try to add a number with letters as shown below?</p>
-    <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token string">"ABC"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p><strong>Output:</strong></p>
-    <pre class="language-txt" tabindex="0"><code class="language-txt">2ABC
-    </code></pre>
-    <p>Adding a number and letters together will cause JavaScript to concatenate or join the values together.</p>
-    <p>In this section, you're going to learn basic data types that JavaScript knows:</p>
-    <ul>
-    <li>Strings</li>
-    <li>Numbers</li>
-    <li>Booleans</li>
-    <li>Null</li>
-    <li>Undefined</li>
-    </ul>
-    <p>You will also see how these different types react to operators such as <code>+</code> shown in the above example.</p>
-    <p>First, let's start with strings.</p>
-    <h3 id="stringsinjavascript">Strings in JavaScript</h3>
-    <p>Strings are simply data defined as a series of characters.</p>
-    <p>You've seen an example of string data previously when you call the <code>console.log()</code> function to print a message:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello, Sunshine!"</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello, Sunshine!</span>
-    </code></pre>
-    <p>A string needs to be enclosed in quotations. You can use double quotes or single quotes, but they have to match.</p>
-    <p>You'll get an error when you use different quotation marks like this:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// Invalid or unexpected token</span>
-    <span class="token keyword">let</span> message <span class="token operator">=</span> "Hello'<span class="token punctuation">;</span> 
-    </code></pre>
-    <p>You can join two or more strings as one with the plus <code>+</code> symbol. Don't forget to add a space before the next string or you'll get a string without spaces!</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello "</span> <span class="token operator">+</span> <span class="token string">"and "</span> <span class="token operator">+</span> <span class="token string">"Goodbye!"</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: Hello and Goodbye!</span>
-    </code></pre>
-    <p>When printing a variable's value, you can also add strings in the <code>console.log()</code> function directly as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello, Dave!"</span><span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The message is: "</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: The message is: Hello, Dave!</span>
-    </code></pre>
-    <p>This is particularly useful when you have multiple strings to console.log in one sentence as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> topic <span class="token operator">=</span> <span class="token string">"JavaScript"</span><span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" is learning "</span> <span class="token operator">+</span> topic <span class="token operator">+</span> <span class="token string">" today"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: John is learning JavaScript today</span>
-    </code></pre>
-    <p>Or you can also use the template strings format, which allows you to embed a variable directly inside the string as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> topic <span class="token operator">=</span> <span class="token string">"JavaScript"</span><span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is learning </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>topic<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> today</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: John is learning JavaScript today</span>
-    </code></pre>
-    <p>To use the template strings format, you need to use the backtick <code>(`)</code> character to wrap the string instead of quotations.</p>
-    <p>The variable is embedded in the string using the dollar symbol and curly brackets as in <code>${variable}</code>.</p>
-    <p>This way, JavaScript knows that you're referencing a variable inside the string.</p>
-    <p>When you have multiple strings to print in a single line, then the template strings format is more convenient because you didn't have to break the string with quotations and concatenations.</p>
-    <p>Next, strings can also represent numbers. You surround the numbers in quotations as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> score <span class="token operator">=</span> <span class="token string">"10"</span> <span class="token operator">+</span> <span class="token string">"30"</span><span class="token punctuation">;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: 1030</span>
-    </code></pre>
-    <p>When you join two string numbers with a <code>+</code> symbol, JavaScript will join the two numbers instead of performing arithmetic addition.</p>
-    <p>This is how strings work in JavaScript. Let's look at numbers next.</p>
-    <h3 id="numbersintegersandfloatsinjavascript">Numbers (integers and floats) in JavaScript</h3>
-    <p>Number data types represent different kinds of numbers. There are two types of numbers in JavaScript:</p>
-    <ul>
-    <li>Integers</li>
-    <li>Floats</li>
-    </ul>
-    <p>An integer is a whole number without decimals and fractions. Below, you see examples of two integers <code>x</code> and <code>y</code>:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: 3</span>
-    </code></pre>
-    <p>On the other hand, floats refer to numbers with decimal points like this:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> f <span class="token operator">=</span> <span class="token number">1.2</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> z <span class="token operator">=</span> <span class="token number">2.35</span><span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f <span class="token operator">+</span> z<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">// Output: 3.55</span>
-    </code></pre>
-    <p>To create a float, you need to write a number and use <code>.</code> to define the decimal values.</p>
-    <p>With number types, you can perform arithmetic operations such as addition <code>+</code>, subtraction <code>-</code>, division <code>/</code>, and multiplication <code>*</code> just like how you use a calculator.</p>
-    <h3 id="booleansinjavascript">Booleans in JavaScript</h3>
-    <p>Boolean is a type that represents <code>true</code> and <code>false</code> values.</p>
-    <p>You can think of Booleans as a light switch that can only be in one of two positions: on or off.</p>
-    <p>So it is with Boolean values in programming languages. They are used when JavaScript needs to make a decision: Go left or go right? Right or wrong?</p>
-    <p>Here's how you create Boolean values in JavaScript:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> on <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> off <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p>This data type is frequently used when you need to make a decision using a control flow. You'll see why Boolean values are very useful in developing a program later in Section 9.</p>
-    <h3 id="undefinedinjavascript">Undefined in JavaScript</h3>
-    <p>Undefined is a data type in JavaScript used to represent a variable that hasn't been assigned any value yet.</p>
-    <p>Anytime you declared a variable without assigning any value, the <code>undefined</code> value will be assigned to that variable. For example:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> first_name<span class="token punctuation">;</span>
-    
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>first_name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
-    </code></pre>
-    <p>You can also assign <code>undefined</code> to a variable explicitly as follows:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> last_name <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p>But this is usually not recommended, because JavaScript has another value called <code>null</code> which is used to mark a variable as empty.</p>
-    <h3 id="nullinjavascript">Null in JavaScript</h3>
-    <p>The <code>null</code> value is a special data type that represents an empty or unknown value. Here's how you assign a variable as null:</p>
-    <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> first_name <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-    </code></pre>
-    <p>The code above means that the value of <code>first_name</code> is empty or unknown.</p>
-    <p>At this point, you may be thinking what's the difference between <code>undefined</code> and <code>null</code>? They seem to serve a similar purpose.</p>
-    <p>And you are correct. Both <code>undefined</code> and <code>null</code> are values that represent nothing, and other programming languages usually only have one, and that is <code>null</code>.</p>
-    <p>In JavaScript, the <code>undefined</code> value is reserved as the default value when a variable is declared, while <code>null</code> means you intentionally assign an "empty" value for the variable.</p>
-    <p>This slight difference will come to play later when you learn about functions in Chapter 13.</p>
-    <p>For now, just keep in mind that JavaScript treats <code>undefined</code> as the "default" empty value and <code>null</code> as the "intentional" empty value.</p>
+
+      <hr>
+
+      <!-- Capítulo 05 -->
+      <h2 id="5javascriptcodestructure">5 - JavaScript Code Structure</h2>
+      <p>A computer program is a series of pieces of code written in a text file. These text files are then run through a software that's designed specially for running the code. The Node.js software you downloaded previously is the tool that processes JavaScript code.</p>
+      <p>Before we go further, let's understand the structure of code.</p>
+      
+      <h3 id="statements">Statements</h3>
+      <p>A statement is a single instruction for the computer to run. Think of it like a sentence, but for computers. We can end a statement by using a semicolon <code>;</code> just like we can end a sentence using a dot <code>.</code></p>
+      <p>You can write multiple statements in a single line, but the convention is to write one statement per line:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// This is hard to read</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token comment"><br />// Now it's better</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      <p>Each statement is an expression of some action that needs to be carried out by the software that executes the code.</p>
+      
+      <h3 id="comments">Comments</h3>
+      <p>In programming, comments are text we use to communicate the context of the code written in the file.</p>
+      <p>To write a comment in JavaScript, you need to add two forward slashes <code>//</code> before the comment as shown below:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// This is a comment</span><br /><span class="token comment">// This is also a comment</span><br /><br /><span class="token comment">// Below print two lines of statements</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      <p>Comments are ignored by the language processor, so you can use comments to disable some code without having to delete that code.</p>
+      <p>The code below shows how to disable the second print statement:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token comment">// console.log("I'm learning JavaScript");</span></code></pre>
+      
+      <h3 id="executionflow">Execution Flow</h3>
+      <p>A language processor such as Node.js executes statements in a top-down approach. The statement written in the first line will be executed before the second line, then continue down to the last line:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm learning JavaScript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment">// Printing numbers</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      <p><strong>Output:</strong></p>
+      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello World!<br />I'm learning JavaScript<br />1<br />2<br />3</code></pre>
+      <p>If you want to print the numbers before the text, then you need to move the corresponding <code>console.log()</code> lines to the top.</p>
+
+      <h3 id="exercise1">Exercise #1</h3>
+      <p>Try to print your name, age, and occupation on the console.</p>
+      <p>The output would look as follows:</p>
+      <pre class="language-txt" tabindex="0"><code class="language-txt">John Doe<br />19<br />Student</code></pre>
+      <p>Now that you understand the basic code structure of JavaScript, let's continue with learning variables next.</p>
+
+      <hr>
+
+      <!-- Capítulo 06 -->
+      <h2 id="6javascriptvariables">6 - JavaScript Variables</h2>
+      <p>Before explaining what a variable is, I want you to change the code you've written in the <code>index.js</code> file.</p>
+      <p>Change the code in that file as follows:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello World!"</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span></code></pre>
+      <p>Next, run the code using the <code>node index.js</code> command. You'll see the same output as when you write the 'Hello World!' message directly inside the <code>console.log()</code> function. How can this be?</p>
+      <p>This is because the message written in the code above is a <em>variable</em>.</p>
+      <p>In programming, a variable is simply a name that you give to a value so that you can access that value later. You can think of a variable as a label that can be tagged to a certain value, so you can refer to the value using the label.</p>
+      <p>To declare a variable, you need to type the keyword <code>let</code> followed by the variable name.</p>
+      <p>The first line in the code tells JavaScript to associate the <code>message</code> variable with the value <code>Hello World!</code>:</p>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello World!"</span></code></pre>
+      <p>In the second line, JavaScript is instructed to print the value of <code>message</code>, and that's exactly what it does.</p>
+      <p>You can change the value of your variable by re-assigning another value as follows:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js">message <span class="token operator">=</span> <span class="token string">"Hello World!"</span><br /><span class="token function">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><br />message <span class="token operator">=</span> <span class="token string">"Nice weather!"</span><br /><span class="token function">print</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span></code></pre>
+
+      <p>Run the file and you'll see two lines printed as the output:</p>
+
+      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello World!<br />Nice weather!</code></pre>
+
+      <p>Variables are used to reference data so that you can use the same data multiple times in your program.</p>
+      <p>Next, let's see some rules for naming variables in JavaScript.</p>
+
+      <h3 id="variablenaming">Variable naming</h3>
+      <p>JavaScript has a few naming rules that you need to know to avoid naming errors.</p>
+      <p>Variable names can only contain alphabet letters, numbers, and underscores (<code>_</code>). This means you can name your variable <code>message</code>, <code>message_1</code>, <code>message_2</code>.</p>
+      <p>The first character of the variable name must not be a number. <code>message_1</code> is okay. <code>1_message</code> is not.</p>
+      <p>You can't use reserved keywords such as <code>console</code> because they are used by JavaScript to do certain things. There are many other keywords used by JavaScript that you'll learn in the following sections such as <code>if</code>, <code>for</code>, and <code>while</code>.</p>
+      <p>Variable names are case-sensitive, which means <code>Message</code>, <code>MESSAGE</code>, and <code>message</code> can be used to create three different variables. But of course, I don't recommend using similar names as it causes confusion.</p>
+      <p>Sometimes, you need more than one word to declare a variable name. JavaScript has two naming conventions that are used worldwide:</p>
+      <ol>
+        <li><code>camelCase</code></li>
+        <li><code>snake_case</code></li>
+      </ol>
+      <p>Camel case is a naming convention that uses an uppercase letter for the first character for subsequent words. Here's an example:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myAwesomeVariable</code></pre>
+
+      <p>The snake case naming convention uses an underscore to separate words. Here's an example:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> my_awesome_variable</code></pre>
+
+      <p>Both are acceptable naming conventions, but you should stick to one of them in your code to avoid confusion.</p>
+
+      <h3 id="constantvariable">Constant variable</h3>
+      <p>There are times when you need to store a value that never changes in a variable.</p>
+      <p>A constant variable is a variable that doesn't change its value as long as the program is running. In other programming languages, changing the value of a constant will produce an error.</p>
+      <p>In JavaScript, a constant variable is declared using the <code>const</code> keyword.</p>
+      <p>The following shows how to declare 2 constants in JavaScript:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">FILE_SIZE_LIMIT</span> <span class="token operator">=</span> <span class="token number">2000</span><br /><span class="token keyword">const</span> <span class="token constant">MAX_SPEED</span> <span class="token operator">=</span> <span class="token number">300</span></code></pre>
+
+      <p>The naming convention for a constant is to use all uppercase letters, although using lowercase letters also works. The uppercase is just a standard to make constants stand out more.</p>
+
+      <h3 id="thevarkeyword">The var keyword</h3>
+      <p>The <code>var</code> keyword is used to declare variables with a global scope. This keyword was the only keyword you can use to declare variables before JavaScript released the new <code>let</code> and <code>const</code> keyword in 2015.</p>
+      <p>As of today, you should avoid using <code>var</code> if you can, since <code>var</code> can introduce bugs that you can avoid by using the <code>let</code> keyword.</p>
+      <p>To show you what I mean, consider the following example:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />&nbsp;<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span></code></pre>
+
+      <p>The code above will print the <code>name</code> variable just fine, but it really should not because the variable <code>name</code> is declared inside the <code>if</code> block.</p>
+      <p>This is because any variable declared using the <code>var</code> keyword is accessible from everywhere. The scope of that variable is global.</p>
+      <p>On the other hand, the <code>let</code> keyword has a block scope, which means the variable is only accessible from the block and all its child blocks.</p>
+      <p>But why bother with scoping the variable? This is because when you have hundreds or thousands of code lines, it can become frustrating to trace an error that occurs because of global variables.</p>
+      <p>There's a principle in software development called "principles of least exposure", which means you don't expose any part of your program that's unnecessary.</p>
+      <p>Block scoping a variable ensures that a variable is exposed and accessible only in parts of your codebase that require the variable.</p>
+      <p>A variable declared using the <code>let</code> keyword is identical to a variable declared using <code>var</code> except for the scope level.</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />&nbsp;<span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment">// Error: name is not defined</span></code></pre>
+
+      <p>This also means that you now have <code>var</code>, <code>let</code>, and <code>const</code> keywords to declare a variable. Which one to use?</p>
+      <p>In general, you can declare a variable with <code>const</code> first. When you code your application and realize that you need to change the variable assignment, you can change the declaration to <code>let</code>.</p>
+      <p>If you know from the start that the variable's value will change, then you can use <code>let</code> immediately. Just don't use <code>var</code> today or people might get mad at you.</p>
+      
+      <h3 id="exercise2">Exercise #2</h3>
+      <p>Write a program with three variables, each with the following value:</p>
+      <ol>
+        <li>The first variable contains your name</li>
+        <li>The second variable contains your age</li>
+        <li>The third variable contains your occupation</li>
+      </ol>
+      <p>Then print the variables using the <code>console.log()</code> method. Here's the example output:</p>
+      
+      <pre class="language-txt" tabindex="0"><code class="language-txt">John Doe <br />Student <br />19</code></pre>
+
+      <h3 id="summary">Summary</h3>
+      <p>How you use variables to make a program that does what you want it to do is one of the most important skills you can have as a programmer.</p>
+      <p>But before you learn more about how to make use of variables, let's learn about data types in JavaScript.</p>
+
+      <hr>
+
+      <!--kg-card-end: markdown--><!--kg-card-begin: markdown-->
+      <h2 id="7javascriptbasicdatatypes">7 - JavaScript Basic Data Types</h2>
+      <p>Data Types are simply definitions for different types of data known to a programming language.</p>
+      <p>A data type contains specifications about what you can and can't do with that data.</p>
+      <p>To show you a brain-friendly example, I'm sure you agree that <code>2 + 2 = 4</code>?</p>
+      <p>Well, JavaScript also agrees with that:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>&nbsp;<span class="token comment">// Output: 4</span></code></pre>
+
+      <p>But what if you try to add a number with letters as shown below?</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token string">"ABC"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+      <p><strong>Output:</strong></p>
+      
+      <pre class="language-txt" tabindex="0"><code class="language-txt">2ABC</code></pre>
+
+      <p>Adding a number and letters together will cause JavaScript to concatenate or join the values together.</p>
+      <p>In this section, you're going to learn basic data types that JavaScript knows:</p>
+      <ul>
+      <li>Strings</li>
+      <li>Numbers</li>
+      <li>Booleans</li>
+      <li>Null</li>
+      <li>Undefined</li>
+      </ul>
+      <p>You will also see how these different types react to operators such as <code>+</code> shown in the above example.</p>
+      <p>First, let's start with strings.</p>
+      
+      <h3 id="stringsinjavascript">Strings in JavaScript</h3>
+      <p>Strings are simply data defined as a series of characters.</p>
+      <p>You've seen an example of string data previously when you call the <code>console.log()</code> function to print a message:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello, Sunshine!"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello, Sunshine!</span></code></pre>
+
+      <p>A string needs to be enclosed in quotations. You can use double quotes or single quotes, but they have to match.</p>
+      <p>You'll get an error when you use different quotation marks like this:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// Invalid or unexpected token</span><br /><span class="token keyword">let</span> message <span class="token operator">=</span> "Hello'<span class="token punctuation">;</span> </code></pre>
+
+      <p>You can join two or more strings as one with the plus <code>+</code> symbol. Don't forget to add a space before the next string or you'll get a string without spaces!</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello "</span> <span class="token operator">+</span> <span class="token string">"and "</span> <span class="token operator">+</span> <span class="token string">"Goodbye!"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment">// Output: Hello and Goodbye!</span></code></pre>
+
+      <p>When printing a variable's value, you can also add strings in the <code>console.log()</code> function directly as follows:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">"Hello, Dave!"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The message is: "</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment">// Output: The message is: Hello, Dave!</span></code></pre>
+
+      <p>This is particularly useful when you have multiple strings to console.log in one sentence as follows:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> topic <span class="token operator">=</span> <span class="token string">"JavaScript"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" is learning "</span> <span class="token operator">+</span> topic <span class="token operator">+</span> <span class="token string">" today"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment">// Output: John is learning JavaScript today</span></code></pre>
+      
+      <p>Or you can also use the template strings format, which allows you to embed a variable directly inside the string as follows:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> topic <span class="token operator">=</span> <span class="token string">"JavaScript"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is learning </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>topic<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> today</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment">// Output: John is learning JavaScript today</span></code></pre>
+
+      <p>To use the template strings format, you need to use the backtick <code>(`)</code> character to wrap the string instead of quotations.</p>
+      <p>The variable is embedded in the string using the dollar symbol and curly brackets as in <code>${variable}</code>.</p>
+      <p>This way, JavaScript knows that you're referencing a variable inside the string.</p>
+      <p>When you have multiple strings to print in a single line, then the template strings format is more convenient because you didn't have to break the string with quotations and concatenations.</p>
+      <p>Next, strings can also represent numbers. You surround the numbers in quotations as follows:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> score <span class="token operator">=</span> <span class="token string">"10"</span> <span class="token operator">+</span> <span class="token string">"30"</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>&nbsp;<span class="token comment">// Output: 1030</span></code></pre>
+
+      <p>When you join two string numbers with a <code>+</code> symbol, JavaScript will join the two numbers instead of performing arithmetic addition.</p>
+      <p>This is how strings work in JavaScript. Let's look at numbers next.</p>
+
+      <h3 id="numbersintegersandfloatsinjavascript">Numbers (integers and floats) in JavaScript</h3>
+      <p>Number data types represent different kinds of numbers. There are two types of numbers in JavaScript:</p>
+      <ul>
+        <li>Integers</li>
+        <li>Floats</li>
+      </ul>
+      <p>An integer is a whole number without decimals and fractions. Below, you see examples of two integers <code>x</code> and <code>y</code>:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>&nbsp;<span class="token comment">// Output: 3</span></code></pre>
+
+      <p>On the other hand, floats refer to numbers with decimal points like this:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> f <span class="token operator">=</span> <span class="token number">1.2</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> z <span class="token operator">=</span> <span class="token number">2.35</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f <span class="token operator">+</span> z<span class="token punctuation">)</span><span class="token punctuation">;</span>&nbsp;<span class="token comment">// Output: 3.55</span></code></pre>
+
+      <p>To create a float, you need to write a number and use <code>.</code> to define the decimal values.</p>
+      <p>With number types, you can perform arithmetic operations such as addition <code>+</code>, subtraction <code>-</code>, division <code>/</code>, and multiplication <code>*</code> just like how you use a calculator.</p>
+
+      <h3 id="booleansinjavascript">Booleans in JavaScript</h3>
+      <p>Boolean is a type that represents <code>true</code> and <code>false</code> values.</p>
+      <p>You can think of Booleans as a light switch that can only be in one of two positions: on or off.</p>
+      <p>So it is with Boolean values in programming languages. They are used when JavaScript needs to make a decision: Go left or go right? Right or wrong?</p>
+      <p>Here's how you create Boolean values in JavaScript:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> on <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> off <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span></code></pre>
+
+      <p>This data type is frequently used when you need to make a decision using a control flow. You'll see why Boolean values are very useful in developing a program later in Section 9.</p>
+
+      <h3 id="undefinedinjavascript">Undefined in JavaScript</h3>
+      <p>Undefined is a data type in JavaScript used to represent a variable that hasn't been assigned any value yet.</p>
+      <p>Anytime you declared a variable without assigning any value, the <code>undefined</code> value will be assigned to that variable. For example:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> first_name<span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>first_name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span></code></pre>
+
+      <p>You can also assign <code>undefined</code> to a variable explicitly as follows:</p>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> last_name <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span></code></pre>
+
+      <p>But this is usually not recommended, because JavaScript has another value called <code>null</code> which is used to mark a variable as empty.</p>
+
+      <h3 id="nullinjavascript">Null in JavaScript</h3>
+      <p>The <code>null</code> value is a special data type that represents an empty or unknown value. Here's how you assign a variable as null:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> first_name <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></code></pre>
+      
+      <p>The code above means that the value of <code>first_name</code> is empty or unknown.</p>
+      <p>At this point, you may be thinking what's the difference between <code>undefined</code> and <code>null</code>? They seem to serve a similar purpose.</p>
+      <p>And you are correct. Both <code>undefined</code> and <code>null</code> are values that represent nothing, and other programming languages usually only have one, and that is <code>null</code>.</p>
+      <p>In JavaScript, the <code>undefined</code> value is reserved as the default value when a variable is declared, while <code>null</code> means you intentionally assign an "empty" value for the variable.</p>
+      <p>This slight difference will come to play later when you learn about functions in Chapter 13.</p>
+      <p>For now, just keep in mind that JavaScript treats <code>undefined</code> as the "default" empty value and <code>null</code> as the "intentional" empty value.</p>
+
+      <hr>
+
+
+
+
+
+      
+
     <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="8typeconversionandcoercion">8 - Type Conversion and Coercion</h2>
     <p>At times, you might want to convert one data type into another so that the program runs as expected.</p>
     <p>For example, suppose you need to convert a string into an integer so you can perform an addition between numbers.</p>
