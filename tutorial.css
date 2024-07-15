@@ -24,8 +24,9 @@
 }
 
 img {
-  display: none;
-  width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 section {
@@ -63,6 +64,12 @@ blockquote {
 
 hr {
   margin: 40px 0;
+}
+
+:not(pre)>code {
+  border: 1px solid gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
 }
 
 
