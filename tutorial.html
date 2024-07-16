@@ -958,82 +958,46 @@
 
       <p>The second <code>console.log()</code> call above will be executed no matter what value you assign to the <code>balance</code> variable.</p>
       <p>If you want it to execute only when the <code>if</code> condition is met, then put the line inside the curly brackets as well:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Next, suppose you need to run some code only when the <code>if</code> statement condition is not fulfilled.</p>
       <p>This is where the <code>else</code> statement comes in. The <code>else</code> statement is used to run code only when the <code>if</code> statement is not fulfilled.</p>
       <p>Here's an example:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sorry, not enough money. Save more!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sorry, not enough money. Save more!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <p>Now change the value of <code>balance</code> to be less than <code>5000</code>, and you'll trigger the <code>else</code> block in the example.</p>
       <p>JavaScript also has the <code>else if</code> statement which allows you to write another condition to check should the <code>if</code> statement condition isn't met.</p>
       <p>Consider the example below:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">3000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You only have enough money for a staycation"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sorry, not enough money. Save more!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">7000</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You have the money for this trip. Let's go!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>balance <span class="token operator">&gt;</span> <span class="token number">3000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You only have enough money for a staycation"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sorry, not enough money. Save more!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The end!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <p>When the <code>balance</code> amount is less than <code>5000</code>, the <code>else if</code> statement will check if the <code>balance</code> is more than <code>3000</code>. If it does, then the program will proceed to recommend you do a staycation.</p>
       <p>You can write as many <code>else if</code> statements as you need, and each one will be executed only if the previous statement isn't met.</p>
       <p>Together, the <code>if..else..else if</code> statements allow you to execute different blocks of code depending on the condition the program faced.</p>
+
       <h3 id="theswitchcasestatement">The switch...case statement</h3>
       <p>The <code>switch</code> statement is a part of core JavaScript syntax that allows you to control the execution flow of your code.</p>
       <p>It's often thought of as an alternative to the <code>if..else</code> statement that gives you more readable code, especially when you have many different conditions to assess.</p>
       <p>Here's an example of a working <code>switch</code> statement. I will explain the code below:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
-      <span class="token keyword">switch</span> <span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token number">10</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is 10"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">20</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is 20"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is neither 10 or 20"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span><br /><span class="token keyword">switch</span> <span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /><span class="token keyword">  case</span> <span class="token number">10</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is 10"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">  break</span><span class="token punctuation">;</span><br /><span class="token keyword">  case</span> <span class="token number">20</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is 20"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">  break</span><span class="token punctuation">;</span><br /><span class="token keyword">  default</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age is neither 10 or 20"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>First, you need to pass an expression to be evaluated by the <code>switch</code> statement into the parentheses. In the example, the <code>age</code> variable is passed as an argument for evaluation.</p>
       <p>Then, you need to write the <code>case</code> values that the <code>switch</code> statement will try to match with your expression. The <code>case</code> value is immediately followed by a colon (<code>:</code>) to mark the start of the case block:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">case</span> <span class="token string">"apple"</span><span class="token operator">:</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">case</span> <span class="token string">"apple"</span><span class="token operator">:</span></code></pre>
+
       <p>Keep in mind the data type of the <code>case</code> value that you want to match with the expression. If you want to match a <code>string</code>, then you need to put a <code>string</code>. <code>switch</code> statements <strong>won't perform type coercion</strong> when you have a <code>number</code> as the argument but put a <code>string</code> for the case:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token string">"1"</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /><span class="token keyword">case</span> <span class="token string">"1"</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>The number expression doesn't match the string case value, so JavaScript won't log anything to the console.</p>
       <p>The same also happens for boolean values. The number <code>1</code> won't be coerced as <code>true</code> and the number <code>0</code> won't be coerced as <code>false</code>:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token boolean">true</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello True!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token boolean">false</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Bonjour False!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No matching case"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  <span class="token keyword">case</span> <span class="token boolean">true</span><span class="token operator">:</span><br />    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello True!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />    <span class="token keyword">break</span><span class="token punctuation">;</span><br />  <span class="token keyword">case</span> <span class="token boolean">false</span><span class="token operator">:</span><br />    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Bonjour False!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />    <span class="token keyword">break</span><span class="token punctuation">;</span><br />  <span class="token keyword">default</span><span class="token operator">:</span><br />    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No matching case"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <h3 id="theswitchstatementbody">The switch statement body</h3>
       <p>The <code>switch</code> statement body is composed of three keywords:</p>
       <ul>
@@ -1043,49 +1007,31 @@
       </ul>
       <p>When your expression finds a matching <code>case</code>, JavaScript will execute the code following the <code>case</code> statement until it finds the <code>break</code> keyword. If you omit the <code>break</code> keyword, then the code execution will continue to the next block.</p>
       <p>Take a look at the following example:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is one"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is zero"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No matching case"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is one"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is zero"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">default</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"No matching case"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>When you execute the code above, JavaScript will print the following log:</p>
-      <pre class="language-shell" tabindex="0"><code class="language-shell"><span class="token operator">&gt;</span> <span class="token string">"Value is zero"</span>
-      <span class="token operator">&gt;</span> <span class="token string">"No matching case"</span>
-      </code></pre>
+
+      <pre class="language-shell" tabindex="0"><code class="language-shell"><span class="token operator">&gt;</span> <span class="token string">"Value is zero"</span><br /><span class="token operator">&gt;</span> <span class="token string">"No matching case"</span></code></pre>
+
       <p>This is because without the <code>break</code> keyword, <code>switch</code> will continue to evaluate the expression against the remaining cases even when a matching case is already found.</p>
       <p>Your switch evaluation may match more than one case, so the <code>break</code> keyword is commonly used to exit the process once a match is found.</p>
       <p>Finally, you can also put expressions as <code>case</code> values:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"value is twenty"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">case</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"value is twenty"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">break</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>But you need to keep in mind that the value for a <code>case</code> block <strong>must exactly match</strong> the <code>switch</code> argument.</p>
       <p>One of the most common mistakes when using the <code>switch</code> statement is that people think <code>case</code> value gets evaluated as <code>true</code> or <code>false</code>.</p>
       <p>The following <code>case</code> blocks won't work in <code>switch</code> statements:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">switch</span> <span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> age <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is less than ten"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> age <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is less than twenty"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is twenty or more"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span><br /><span class="token keyword">switch</span> <span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">case</span> age <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is less than ten"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> age <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is less than twenty"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">default</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Value is twenty or more"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>You need to remember the differences between the <code>if</code> and <code>case</code> evaluations:</p>
       <ul>
-      <li><code>if</code> block will be executed when the test condition <strong>evaluates to <code>true</code></strong></li>
-      <li><code>case</code> block will be executed when the test condition <strong>exactly matches</strong> the given <code>switch</code> argument</li>
+        <li><code>if</code> block will be executed when the test condition <strong>evaluates to <code>true</code></strong></li>
+        <li><code>case</code> block will be executed when the test condition <strong>exactly matches</strong> the given <code>switch</code> argument</li>
       </ul>
+
       <h3 id="switchstatementusecases">Switch statement use cases</h3>
       <p>The rule of thumb when you consider between <code>if</code> and <code>switch</code> is this:</p>
       <blockquote>
@@ -1093,94 +1039,36 @@
       </blockquote>
       <p>For example, let's say you want to write a weekday name based on the weekday number</p>
       <p>Here's how you can write it:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> weekdayNumber <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
       
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Monday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tuesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Wednesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Thursday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Friday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The weekday number is invalid"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> weekdayNumber <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Monday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tuesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Wednesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Thursday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Friday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>weekdayNumber <span class="token operator">===</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The weekday number is invalid"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>I don't know about you, but the code above sure looks cumbersome to me! Although there's nothing wrong with the code above, you can make it prettier with <code>switch</code>:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> weekdayNumber <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">switch</span> <span class="token punctuation">(</span>weekdayNumber<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Monday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tuesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Wednesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Thursday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Friday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token number">6</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">default</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The weekday number is invalid"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> weekdayNumber <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">switch</span> <span class="token punctuation">(</span>weekdayNumber<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Sunday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Monday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tuesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Wednesday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Thursday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Friday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token number">6</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Saturday"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">default</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The weekday number is invalid"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>When you have lots of condition to evaluate for the same block, you'd probably combine multiple <code>if</code> conditions using the logical operator <strong>AND (<code>&amp;&amp;</code>)</strong> or <strong>OR(<code>||</code>)</strong>:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myFood <span class="token operator">=</span> <span class="token string">"Banana"</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>myFood <span class="token operator">===</span> <span class="token string">"Banana"</span> <span class="token operator">||</span> myFood <span class="token operator">===</span> <span class="token string">"Apple"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Eat fruits everyday to keep you healthy."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>myFood <span class="token operator">===</span> <span class="token string">"Chocolate Cake"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enjoy the sweet treat."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myFood <span class="token operator">=</span> <span class="token string">"Banana"</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>myFood <span class="token operator">===</span> <span class="token string">"Banana"</span> <span class="token operator">||</span> myFood <span class="token operator">===</span> <span class="token string">"Apple"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Eat fruits everyday to keep you healthy."</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br /><span class="token keyword">if</span> <span class="token punctuation">(</span>myFood <span class="token operator">===</span> <span class="token string">"Chocolate Cake"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enjoy the sweet treat."</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>You can replace the code above using the switch statement. The key is you need to stack multiple <code>cases</code> as one just like this:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myFood <span class="token operator">=</span> <span class="token string">"Banana"</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">switch</span> <span class="token punctuation">(</span>myFood<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">case</span> <span class="token string">"Banana"</span><span class="token operator">:</span>
-        <span class="token keyword">case</span> <span class="token string">"Apple"</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Eat fruits everyday to keep you healthy."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token keyword">case</span> <span class="token string">"Chocolate Cake"</span><span class="token operator">:</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enjoy the sweet treat."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token keyword">break</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> myFood <span class="token operator">=</span> <span class="token string">"Banana"</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">switch</span> <span class="token punctuation">(</span>myFood<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">case</span> <span class="token string">"Banana"</span><span class="token operator">:</span><br /> <span class="token keyword">case</span> <span class="token string">"Apple"</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Eat fruits everyday to keep you healthy."</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />  <span class="token keyword">break</span><span class="token punctuation">;</span><br /> <span class="token keyword">case</span> <span class="token string">"Chocolate Cake"</span><span class="token operator">:</span><br />  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Enjoy the sweet treat."</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> <span class="token keyword">break</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Unfortunately, <code>switch</code> can't replace multiple <code>if</code> conditions that use the <code>&amp;&amp;</code> operator because of the way the <code>case</code> evaluation works. You need to use the <code>if</code> statement for that.</p>
+
       <h3 id="exercise5">Exercise #5</h3>
       <p>A primary school is giving different rewards based on the student's grade:</p>
       <ul>
-      <li>Students that got an A will get a Chocolate</li>
-      <li>Students that got a B will get a Cookie</li>
-      <li>Students that got a C will get a Candy</li>
-      <li>For any other value, print "No reward to give."</li>
+        <li>Students that got an A will get a Chocolate</li>
+        <li>Students that got a B will get a Cookie</li>
+        <li>Students that got a C will get a Candy</li>
+        <li>For any other value, print "No reward to give."</li>
       </ul>
       <p>Create a variable named <code>grade</code> that will store the student's grade.</p>
       <p>Example output:</p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">You got an A, so here's a Chocolate for you!
-      You got a B, here's a Cookie for you!
-      You got a C, there's room for improvement and here's your Candy!
-      </code></pre>
+
+      <pre class="language-txt" tabindex="0"><code class="language-txt">You got an A, so here's a Chocolate for you!<br />You got a B, here's a Cookie for you!<br />You got a C, there's room for improvement and here's your Candy!</code></pre>
+
       <p>You can use either the <code>if...else</code> or the <code>switch...case</code> statement.</p>
 
       <hr>
@@ -1189,226 +1077,175 @@
       <h2 id="12controlflowsloopsinjavascript">12 - Control Flows (Loops) in JavaScript</h2>
       <p>As you program an application in JavaScript, you'll often need to write a piece of code that needs to be executed repeatedly.</p>
       <p>Let's say you want to write a program that prints the numbers 1 to 10 in the console. You can do it by calling <code>console.log</code> 10 times like this:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      
-      <span class="token comment">// and so on..</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token comment">// and so on..</span></code></pre>
+
       <p>This works, but there's a better way to write this kind of repetitive task.</p>
       <p>A <strong>Loop statement</strong> is another category of control flow statement used to execute a block of code multiple times until a certain condition is met.</p>
       <p>There are two loop statements used in JavaScript:</p>
       <ul>
-      <li>The <code>for</code> statement</li>
-      <li>The <code>while</code> statement</li>
+        <li>The <code>for</code> statement</li>
+        <li>The <code>while</code> statement</li>
       </ul>
       <p>Let's learn how to use these statements in practice.</p>
+
       <h3 id="theforstatement">The for statement</h3>
       <p>Instead of repeating yourself 10 times to print the numbers 1 to 10, you can use the <code>for</code> statement and write just a single line of code as follows:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>There you go! The <code>for</code> statement is followed by parentheses (<code>()</code>) which contain 3 expressions:</p>
       <ul>
-      <li>The <code>initialization</code> expression, where you declare a variable to be used as the source of the loop condition. Represented as <code>x = 0</code> in the example.</li>
-      <li>The <code>condition</code> expression, where the variable in initialization will be evaluated for a specific condition. Represented as <code>x &lt; 10</code> in the example.</li>
-      <li>The <code>arithmetic</code> expression, where the variable value is either incremented or decremented by the end of each loop.</li>
+        <li>The <code>initialization</code> expression, where you declare a variable to be used as the source of the loop condition. Represented as <code>x = 0</code> in the example.</li>
+        <li>The <code>condition</code> expression, where the variable in initialization will be evaluated for a specific condition. Represented as <code>x &lt; 10</code> in the example.</li>
+        <li>The <code>arithmetic</code> expression, where the variable value is either incremented or decremented by the end of each loop.</li>
       </ul>
       <p>These expressions are separated by a semicolon (<code>;</code>)</p>
       <p>After the expressions, the curly brackets (<code>{}</code>) will be used to create a code block that will be executed by JavaScript as long as the <em><code>condition</code></em> expression returns <code>true</code>.</p>
       <p>You can identify which expression is which by paying attention to the semicolon (<code>;</code>) which ends the statement.</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span> <span class="token punctuation">[</span>initialization<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">[</span>condition<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">[</span>arithmetic expression<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment">// As long as condition returns true,</span>
-        <span class="token comment">// This block will be executed repeatedly</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span> <span class="token punctuation">[</span>initialization<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">[</span>condition<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">[</span>arithmetic expression<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /><span class="token comment"> // As long as condition returns true,</span><br /><span class="token comment"> // This block will be executed repeatedly</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>The arithmetic expression can be an increment (<code>++</code>) or a decrement (<code>--</code>) expression. It is run once each time the execution of the code inside the curly brackets end:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> x <span class="token operator">&gt;=</span> <span class="token number">1</span><span class="token punctuation">;</span> x<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> x <span class="token operator">&gt;=</span> <span class="token number">1</span><span class="token punctuation">;</span> x<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Or you can also use shorthand arithmetic operators like <code>+=</code> and <code>-=</code> as shown below:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// for statement with shorthand arithmetic expression</span>
-      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">;</span> x <span class="token operator">+=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token comment">// for statement with shorthand arithmetic expression</span><br /><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">;</span> x <span class="token operator">+=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Here, the x will be incremented by 3 each time the loop is executed.</p>
       <p>Once the loop is over, JavaScript will continue to execute any code you write below the <code>for</code> body:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The for loop has ended"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Continue code execution"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"The for loop has ended"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Continue code execution"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <h3 id="whentouseaforloop">When to use a for loop</h3>
       <p>The for loop is useful <strong>when you know how many times</strong> you need to execute a repetitive task.</p>
       <p>For example, let's say you're writing a program to flip a coin. You need to find how many times the coin lands on heads when tossed 10 times. You can do it by using the <code>Math.random</code> method:</p>
       <ul>
-      <li>When the number is lower than <code>0.5</code> you need to increment the <code>tails</code> counter</li>
-      <li>When the number is <code>0.5</code> and up you must increment the <code>heads</code> counter</li>
+        <li>When the number is lower than <code>0.5</code> you need to increment the <code>tails</code> counter</li>
+        <li>When the number is <code>0.5</code> and up you must increment the <code>heads</code> counter</li>
       </ul>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> heads <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token keyword">let</span> tails <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token keyword">for</span> <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          tails<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-          heads<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-      
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tossed the coin ten times"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Number of heads: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>heads<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Number of tails: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tails<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> heads <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> tails <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">for</span> <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br />  tails<span class="token operator">++</span><span class="token punctuation">;</span><br /> <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br />  heads<span class="token operator">++</span><span class="token punctuation">;</span><br /> <span class="token punctuation">}</span><br /><span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tossed the coin ten times"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Number of heads: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>heads<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Number of tails: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tails<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <p>The example above shows where the <code>for</code> loop offers the most effective approach.</p>
       <p>Now let's see an alternative exercise about coin flips where the <code>for</code> loop is not effective:</p>
       <p><strong><em>Find out how many times you need to flip a coin until it lands on heads.</em></strong></p>
       <p>This time, you don't know <strong>how many times</strong> you need to flip the coin. This is where you need to use the <code>while</code> loop statement, which you're going to learn next.</p>
+
       <h3 id="thewhilestatement">The while statement</h3>
       <p>The <code>while</code> statement or <code>while</code> loop is used to run a block of code as long as the condition evaluates to <code>true</code>.</p>
       <p>You can define the condition and the statement for the loop as follows:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        statement<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> statement<span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Just like the <code>for</code> loop, the <code>while</code> loop is used to execute a piece of code over and over again until it reaches the desired condition.</p>
       <p>In the example below, we will keep executing the <em>statement</em> block until the <em>condition</em> expression returns <code>false</code>:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">The value of i = </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        i<span class="token operator">++</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">The value of i = </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> i<span class="token operator">++</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Here, the <code>while</code> loop will repeatedly print the value of <code>i</code> as long as <code>i</code> is less than <code>6</code>. In each iteration, the value of <code>i</code> is incremented by 1 until it reaches 6 and the loop terminates.</p>
       <p>Keep in mind that you need to include a piece of code that eventually turns the evaluating condition to <code>false</code> or the <code>while</code> loop will be executed forever. The example below will cause an infinite loop:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      
-      <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">The value of i = </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">The value of i = </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Because the value of <code>i</code> never changes, the while loop will go on forever!</p>
+
       <h3 id="whentouseawhileloop">When to use a while loop</h3>
       <p>Seeing that both <code>while</code> and <code>for</code> can be used for executing a piece of code repeatedly, when should you use a <code>while</code> loop instead of <code>for</code>?</p>
       <p>An easy way to know when you should use <code>while</code> is when <strong>you don't know how many times</strong> you need to execute the code.</p>
       <p>Back to the coin toss example, there's one case that's perfect for a <code>while</code> loop:</p>
       <p><strong><em>Find out how many times you need to flip a coin until it lands on heads.</em></strong></p>
       <p>You also need to <strong>show how many times</strong> you flip the coin until it lands on heads:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> flips <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-      <span class="token keyword">let</span> isHeads <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
       
-      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>isHeads<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        flips<span class="token operator">++</span><span class="token punctuation">;</span>
-        isHeads <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">It took </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>flips<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> flips to land on heads.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">let</span> flips <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br /><span class="token keyword">let</span> isHeads <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><br /><br /><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>isHeads<span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> flips<span class="token operator">++</span><span class="token punctuation">;</span><br /> isHeads <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.5</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br />console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">It took </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>flips<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> flips to land on heads.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <p>Here, the condition <code>isHead = Math.random() &lt; 0.5</code> simulates the flipping of a fair coin. When the result is <code>true</code>, it means the coin landed on heads and the loop will exit.</p>
       <p>Because you can't know how many times you need to loop until you get heads, you need to use a <code>while</code> loop instead of a <code>for</code> loop.</p>
+
       <h3 id="exercise6">Exercise #6</h3>
       <p>Write a program that prints a half pyramid using asterisks <code>*</code> as shown below:</p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">*
-      **
-      ***
-      ****
-      *****
-      </code></pre>
+      
+      <pre class="language-txt" tabindex="0"><code class="language-txt">*<br />**<br />***<br />****<br />*****</code></pre>
+
       <p>Next, print a reverse half pyramid as follows:</p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">*****
-      ****
-      ***
-      **
-      *
-      </code></pre>
+
+      <pre class="language-txt" tabindex="0"><code class="language-txt">*****<br />****<br />***<br />**<br />*</code></pre>
 
       <hr>
 
-      <!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="13functionsinjavascript">13 - Functions in JavaScript</h2>
+      <!-- Capítulo 13 -->
+      <h2 id="13functionsinjavascript">13 - Functions in JavaScript</h2>
       <p>A function is simply a section (or a block) of code that's written to perform a specific task.</p>
       <p>For example, the type casting function <code>String()</code> is used to convert data of another type to a string.</p>
       <p>The <code>console.log()</code> and various array methods we've learned in previous chapters are also functions. But because these functions are called from an object, they are called methods.</p>
       <p>You'll learn more about methods later in Chapter 14. For now, just know that a function and a method are essentially the same, except that a method is called from an object.</p>
       <p>Besides the built-in functions provided by JavaScript, you can also create your own function.</p>
+
       <h3 id="howtocreateyourownfunction">How to create your own function</h3>
       <p>Creating a function starts with typing the <code>function</code> keyword followed by the function name, a pair of round brackets, and then a pair of curly brackets.</p>
       <p>Here's an example:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment">// function body here</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token comment">// function body here</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>To call a function, you need to specify the function name followed by parentheses:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello!</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello!</span></code></pre>
+
       <p>The code inside the function is executed when you call that function.</p>
+
       <h3 id="functionparametersandarguments">Function parameters and arguments</h3>
       <p>Parameters are variables used to accept inputs given when the function is called.</p>
       <p>You can specify parameters in the function header, inside the parentheses.</p>
       <p>The following example shows a function that has one parameter called <code>name</code>:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment">// function body</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> <span class="token comment">// function body</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>How you use that <code>name</code> parameter inside the function is up to you.</p>
       <p>You can use the parameter inside the <code>print()</code> function as follows:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Nice weather today, right?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Nice weather today, right?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Now whenever you need to call the <code>greet()</code> function, you need to pass an input to fill for the <code>name</code> parameter.</p>
       <p>The input you passed to fill a parameter is called an argument, and here's how to do it:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Peter"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Peter"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /></code></pre>
+
       <p>The 'Peter' string inside the parentheses when calling the <code>greet()</code> function will be passed as the <code>name</code> parameter.</p>
       <p>Run the code to receive this output:</p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Peter!
-      Nice weather today, right?
-      </code></pre>
-      <p>You can have more than one parameter when defining the function, but you need to split each parameter with a comma as follows:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> weather</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">It's </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>weather<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> today, right?</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
       
-      <span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Nathan"</span><span class="token punctuation">,</span> <span class="token string">"rainy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
+      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Peter!<br />Nice weather today, right?</code></pre>
+
+      <p>You can have more than one parameter when defining the function, but you need to split each parameter with a comma as follows:</p>
+      
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> weather</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">It's </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>weather<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> today, right?</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span><br /><br /><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Nathan"</span><span class="token punctuation">,</span> <span class="token string">"rainy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
       <p><strong>Output:</strong></p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Nathan!
-      It's rainy today, right?
-      </code></pre>
+      
+      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Nathan!<br />It's rainy today, right?</code></pre>
+
       <p>When you specify two parameters in the function header, you need to pass two arguments. If you call the function without passing the arguments then the value will be <code>undefined</code>.</p>
       <p>In the next section, you'll learn how to create parameters with default values, which allows you to call the function without having to pass an argument to it.</p>
       <p>But for now, I hope you see the convenience of having parameters. They make your functions more adaptable and reusable by taking different input values to cover a variety of scenarios the function might have.</p>
       <p>As shown in the example, the <code>name</code> and <code>weather</code> parameters allow you to greet many different people in different weathers.</p>
       <p>Whether sunny, rainy, or cloudy, just change the <code>name</code> and <code>weather</code> arguments when you want to greet another person.</p>
+
       <h3 id="defaultparameters">Default parameters</h3>
       <p>When defining a function, you can set a default value for any parameter in that function.</p>
       <p>For example, the <code>name</code> parameter in the function below is a default parameter:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Nice weather today, right?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-      </code></pre>
+
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Nice weather today, right?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token punctuation">}</span></code></pre>
+
       <p>Here, the default value 'Nathan' will be used when no value or <code>undefined</code> is passed for the <code>name</code> parameter.</p>
       <p>You can test this by calling the <code>greet()</code> function without an argument as follows:</p>
-      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Jack"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      </code></pre>
-      <p><strong>Output:</strong></p>
-      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Nathan!
-      Nice weather today, right?
       
-      Hello, Jack!
-      Nice weather today, right?
-      </code></pre>
+      <pre class="language-js" tabindex="0"><code class="language-js"><span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Jack"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+      <p><strong>Output:</strong></p>
+
+      <pre class="language-txt" tabindex="0"><code class="language-txt">Hello, Nathan!<br />Nice weather today, right?<br /><br />Hello, Jack!<br />Nice weather today, right?</code></pre>
+
       <p>Any function you define can have a mix of default and non-default parameters.</p>
       <p>Here's another example of a function that has one default parameter called <code>name</code> and one non-default parameter called <code>weather</code>:</p>
       <pre class="language-js" tabindex="0"><code class="language-js"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span>weather<span class="token punctuation">,</span> name <span class="token operator">=</span> <span class="token string">"Nathan"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
