@@ -1,19 +1,19 @@
 @charset "utf-8";
 
 :root {
-    --dark-blue: #002ead;
-    --theme-color: #0a0a23;
-    --gray90: #0a0a23;
-    --gray85: #1b1b32;
-    --gray80: #2a2a40;
-    --gray75: #3b3b4f;
-    --gray45: #858591;
-    --gray15: #d0d0d5;
-    --gray10: #dfdfe2;
-    --gray05: #eeeef0;
-    --gray00: #fff;
-    --header-height: 38px;
-    --blue-dark: #002ead;
+  --dark-blue: #002ead;
+  --theme-color: #0a0a23;
+  --gray90: #0a0a23;
+  --gray85: #1b1b32;
+  --gray80: #2a2a40;
+  --gray75: #3b3b4f;
+  --gray45: #858591;
+  --gray15: #d0d0d5;
+  --gray10: #dfdfe2;
+  --gray05: #eeeef0;
+  --gray00: #fff;
+  --header-height: 38px;
+  --blue-dark: #002ead;
 }
 
 * {
@@ -30,40 +30,55 @@ img {
 }
 
 section {
-  margin: 8px auto;
-  width: 90%;
+  margin: 40px auto;
+  width: 75%;
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
 ul, ol {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
 }
 
 blockquote {
-    margin: 0 0 1.5em;
-    padding: 0 1.5em;
-    border-left: var(--dark-blue) 3px solid;
-    display: block;
-    unicode-bidi: isolate;
+  margin: 0 0 1.5em;
+  padding: 0 1.5em;
+  border-left: var(--dark-blue) 3px solid;
+  display: block;
+  unicode-bidi: isolate;
 }
 
 hr {
   margin: 40px 0;
+}
+
+table {
+  border: 1px solid var(--gray15);
+  width: 100%;
+}
+
+table thead th {
+  background-color: var(--gray45);
+  padding: 8px;
+  text-align: left;
+}
+
+table tbody td {
+  padding: 8px;
 }
 
 :not(pre)>code {
@@ -71,8 +86,6 @@ hr {
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
 }
-
-
 
 code[class*=language-],pre[class*=language-] {
   color: #000;
