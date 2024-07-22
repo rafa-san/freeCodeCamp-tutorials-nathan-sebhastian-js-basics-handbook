@@ -1,18 +1,12 @@
 /*
+Exemplo 01
+
 let message = "Hello world!";
 console.log(message);
 message = "Nice weather!";
 console.log(message);
 */
 
-/*
-if (true) {
-  var name = "Rafael";
-  let objeto = "Bola";
-}
-console.log(name);
-console.log(objeto); // Referrence Error
-*/
 
 /*
 Exercise #2

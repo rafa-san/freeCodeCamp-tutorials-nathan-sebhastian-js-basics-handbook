@@ -1,4 +1,6 @@
 /*
+Exemplo 01
+
 console.log(true && false); // false
 console.log(false || false); // false
 console.log(!true); // false
@@ -6,6 +8,8 @@ console.log(!true); // false
 
 
 /*
+Exemplo 02
+
 // typeof operator
 let x = 5;
 let nome = "Rafael";
@@ -15,6 +19,7 @@ console.log(typeof x); // number
 console.log(typeof nome); // string
 console.log(typeof verdadeiro); // boolean
 */
+
 
 /*
 Exercise #3

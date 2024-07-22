@@ -1,11 +1,16 @@
 /*
+Exemplo 01
+
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 // console.log(birds[0]);
 // birds[2] = 'Vulture';
 // console.log(birds);
 */
 
+
 /*
+Exemplo 02
+
 let pais = [];
 // console.log(pais); // []
 pais.push('Brasil');
@@ -24,6 +29,7 @@ console.log(pais); // [ 'Brasil', 'Argentina' ]
 */
 
 
+// Exemplo 03
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 
 // let pos = fishes.indexOf('bola');
@@ -62,4 +68,4 @@ colors[1] = 'green';
 console.log(colors); // [ 'blue', 'green', 'black' ]
 
 colors.unshift('yellow');
-console.log(colors);
+console.log(colors); // [ 'yellow', 'blue', 'green', 'black' ]

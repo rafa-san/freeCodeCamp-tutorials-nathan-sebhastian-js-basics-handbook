@@ -1,4 +1,6 @@
 /*
+Exemplo 01
+
 // The if...else statement
 
 let balance = 4000;
@@ -16,8 +18,9 @@ console.log('The end');
 */
 
 
+/*
+Exemplo 02
 
-/* 
 // The switch...case statement 
 
 // exemplo 01
@@ -34,7 +37,7 @@ switch(age) {
     console.log('Age is neither 10 or 20');
 }
 
-// exemplo 02
+// Exemplo 03
 let palavra = 'porta';
 
 switch (palavra) {
@@ -49,14 +52,14 @@ switch (palavra) {
 }
 
 
-// exemplo 03
+// Exemplo 04
 switch (20) {
   case 10 + 10:
     console.log("value is twenty");
     break;
 }
 
-// exemplo 04
+// Exemplo 05
 
 //if else
 let weekdayNumber = 1;
@@ -131,8 +134,6 @@ let myFood = "Banana";
         console.log("Enjoy the sweet treat.");
         break;
     }
-
-
 
 
 Exercise #5

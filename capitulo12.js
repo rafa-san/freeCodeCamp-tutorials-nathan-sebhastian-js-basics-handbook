@@ -113,13 +113,12 @@ for (let i = 1; i <= 5; i++) {
     piramide += '*';
   }
   console.log(piramide);
-} 
-
+}
 
 for (let i = 4; i >= 0; i--) {
   piramide = '';
   for (let j = 0; j <= i; j++) {
     piramide += '*';
   }
-  console.log(piramide)
-} 
+  console.log(piramide);
+}

@@ -54,7 +54,7 @@ const person = {
 
 // check if firstName exists
 //console.log('firstName' in person); // true
-// console.log('age' in person); // false
+//console.log('age' in person); // false
 
 
 
