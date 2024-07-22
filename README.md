@@ -6,4 +6,4 @@ Tutorial desenvolvido por **Nathan Sebhastian** que ensina conceitos básicos de
 
 Este repositório contém minhas anotações, exemplos, exercícios e também o tutorial completo.
 
-O link da página original do tutorial é esse aqui: [Learn JavaScript for Beginners](https://www.freecodecamp.org/news/learn-javascript-for-beginners/#arithmeticoperators).
+O link da página original do tutorial é esse aqui: [Learn JavaScript for Beginners](https://www.freecodecamp.org/news/learn-javascript-for-beginners/).
